@@ -1,0 +1,37 @@
+version: '3.1'
+
+services:
+  accessredis:
+    image: redis
+    networks:
+      - mainnet
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+  app:
+    image: micro/feign-error-service:0.0.1
+    networks:
+      - mainnet
+    ports:
+      - 6078:6078
+    environment:
+      MICRO_PORT: 6078
+      MICRO_DATA_BASE_USER: admin
+      MICRO_DATA_BASE_PASSWORD: 12345
+      MICRO_DATA_BASE_HOST: 127.0.0.1
+      MICRO_DATA_BASE_NAME: spring_cloud
+      MICRO_DATA_BASE_ADMIN: admin
+      MICRO_CONFIG_URL: 127.0.0.1
+      MICRO_CONFIG_PORT: 8888
+      MICRO_APP_URL: 127.0.0.1
+      MICRO_REDIS_SERVER: accessredis
+      MICRO_REDIS_PORT: 6379
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+      restart_policy:
+        condition: on-failure
+networks:
+  mainnet:
+    external: true

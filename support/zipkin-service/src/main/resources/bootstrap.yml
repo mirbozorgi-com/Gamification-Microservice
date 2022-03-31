@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: zipkin-service
+  cloud:
+    config:
+      uri: http://${MICRO_CONFIG_URL:localhost}:${MICRO_CONFIG_PORT:8888}
+      label: master
+      profile: prod
+
+
+
+---
+spring:
+  profiles: docker
+  cloud:
+    config:
+      uri: http://config-service:8888

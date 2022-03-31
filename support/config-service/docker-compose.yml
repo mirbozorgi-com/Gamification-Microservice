@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  accessredis:
+    image: redis
+    networks:
+      - mainnet
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+  app:
+    image: micro/config-service:0.0.1
+    networks:
+      - mainnet
+    ports:
+      - 8888:8888
+    environment:
+      MICRO_PORT: 8888
+      MICRO_DATA_BASE_USER: admin
+      MICRO_DATA_BASE_PASSWORD: AeA2EJP3DdRaTyGfbm3fkUsss
+      MICRO_DATA_BASE_HOST: 45.94.255.110
+      MICRO_DATA_BASE_NAME: spring_cloud
+      MICRO_DATA_BASE_ADMIN: admin
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+      restart_policy:
+        condition: on-failure
+networks:
+  mainnet:
+    external: true

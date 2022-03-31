@@ -1,0 +1,41 @@
+version: '3.1'
+
+services:
+  accessredis:
+    image: redis
+    networks:
+      - mainnet
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+  app:
+    image: micro/notification-service:0.0.1
+    networks:
+      - mainnet
+    ports:
+      - 6071:6071
+    environment:
+      MICRO_PORT: 6071
+      MICRO_CONFIG_URL: 127.0.0.1
+      MICRO_CONFIG_PORT: 8888
+      MICRO_APP_URL: 127.0.0.1
+      MICRO_REDIS_SERVER: accessredis
+      MICRO_REDIS_PORT: 6379
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+      restart_policy:
+        condition: on-failure
+networks:
+  mainnet:
+    external: true
+
+
+
+
+
+
+
+
+

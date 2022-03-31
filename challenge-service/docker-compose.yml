@@ -1,0 +1,52 @@
+version: '3.1'
+
+services:
+  accessredis:
+    image: redis
+    networks:
+      - mainnet
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+  app:
+    image: ${_IMG}
+    networks:
+      - mainnet
+    ports:
+      - ${_PORT:-prod}:8080
+    environment:
+      _APP_PORT: 8080
+      _PROFILE: ${_PROFILE:-prod}
+      _APP_LOG: 'false'
+      _JPA_INITIALIZATION_MODE: never
+      _JPA_DLL_AUTO: none
+      
+      _POSTGRES_HOST: ${_POSTGRES_HOST:-//127.0.0.1/challenge-service}
+      _POSTGRES_USER: ${_POSTGRES_USER:-postgres}
+      _POSTGRES_PASS: ${_POSTGRES_PASS:-123}
+      _POSTGRES_HOST_QUARTZ: ${_POSTGRES_HOST_QUARTZ:-//127.0.0.1/challenge-service-quartz}
+      _POSTGRES_USER_QUARTZ: ${_POSTGRES_USER_QUARTZ:-postgres}
+      _POSTGRES_PASS_QUARTZ: ${_POSTGRES_PASS_QUARTZ:-123}
+      
+      _REDIS_SERVER: accessredis
+      _REDIS_PORT: 6379
+      
+      _LOGSTASH_SERVICE_NAME: ${_LOGSTASH_NAME:-challenge-service}
+      _LOGSTASH_ENABLE: ${_LOGSTASH_ENABLE:-'true'}
+      _LOGSTASH_HOST: ${_LOGSTASH_HOST:-127.0.0.1}
+      _LOGSTASH_PORT: ${_LOGSTASH_PORT:-4560}
+
+      _MONGO_DATABASE: ${_MONGO_DATABASE:-challenge-service}
+      _MONGO_HOST: ${_MONGO_HOST:-127.0.0.1}
+      _MONGO_PORT: ${_MONGO_PORT:-27017}
+      _MONGO_USERNAME: ${_MONGO_USERNAME:-challenge-service_user}
+      _MONGO_PASSWORD: ${_MONGO_PASSWORD:-123456}
+
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+      restart_policy:
+        condition: on-failure
+networks:
+  mainnet:

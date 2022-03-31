@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://${MICRO_CONFIG_URL:localhost}:${MICRO_CONFIG_PORT:8888}
+      label: master
+      profile: prod
+
+
+
+---
+spring:
+  profiles: docker
+  cloud:
+    config:
+      uri: http://config-service:8888
+
+Delastic:
+  apm:
+    service_name: user-service
+    application_packages: game.org
+    server_url: http://185.129.169.175:4646

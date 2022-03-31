@@ -1,0 +1,175 @@
+version: '2'
+services:
+  # ------------
+  #   Infra
+  # ------------
+  elasticsearch:
+    image: elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - microservices
+
+  logstash:
+    image: logstash
+    command: logstash -f /etc/logstash/conf.d/logstash.conf
+    volumes:
+      - ./logstash:/etc/logstash/conf.d
+    ports:
+      - "5000:5000"
+    links:
+      - elasticsearch
+    networks:
+      - microservices
+
+  kibana:
+    image: kibana
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    links:
+      - elasticsearch
+    networks:
+      - microservices
+
+  # ------------
+  #   Support
+  # ------------
+  config-service:
+    image: ${NAMESPACE}/config-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    expose:
+      - "8888"
+    ports:
+      - "8888:8888"
+    networks:
+      - microservices
+
+  eureka-service:
+    image: ${NAMESPACE}/eureka-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+    expose:
+      - "8761"
+    ports:
+      - "8761:8761"
+    networks:
+      - microservices
+
+  zipkin-service:
+    image: ${NAMESPACE}/zipkin-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+    expose:
+      - "9411"
+    ports:
+      - "9411:9411"
+    networks:
+      - microservices
+
+  admin-service:
+    image: ${NAMESPACE}/admin-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+      - eureka-service
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+    networks:
+      - microservices
+
+  hystrix-dashboard:
+    image: ${NAMESPACE}/hystrix-dashboard:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+      - eureka-service
+    expose:
+      - "7979"
+    ports:
+      - "7979:7979"
+    networks:
+      - microservices
+
+  security-service:
+    image: ${NAMESPACE}/security-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+      - eureka-service
+    expose:
+      - "9999"
+    ports:
+      - "9999:9999"
+    networks:
+      - microservices
+
+  # ------------
+  #   Services
+  # ------------
+  api-gateway:
+    image: ${NAMESPACE}/api-gateway:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - security-service
+      - product-service
+      - customer-service
+      - payment-service
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+    networks:
+      - microservices
+
+  product-service:
+    image: ${NAMESPACE}/product-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+      - eureka-service
+      - security-service
+    expose:
+      - "8081"
+    ports:
+      - "8081:8081"
+    networks:
+      - microservices
+
+  customer-service:
+    image: ${NAMESPACE}/customer-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+      - eureka-service
+      - security-service
+    expose:
+      - "8082"
+    ports:
+      - "8082:8082"
+    networks:
+      - microservices
+
+  payment-service:
+    image: ${NAMESPACE}/payment-service:${PROFILE}
+    mem_limit: ${MEM_LIMIT}
+    links:
+      - config-service
+      - eureka-service
+      - security-service
+    expose:
+      - "8083"
+    ports:
+      - "8083:8083"
+    networks:
+      - microservices
+
+networks:
+  microservices:
+    driver: bridge

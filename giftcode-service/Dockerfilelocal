@@ -1,0 +1,4 @@
+FROM repository.mirbozorgigames.com/micro/base:2.0.0
+WORKDIR /app
+COPY src/api/target/giftCode-service.jar /app
+ENTRYPOINT ["java","-jar","/app/giftCode-service.jar"]
