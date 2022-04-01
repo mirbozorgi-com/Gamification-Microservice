@@ -7,46 +7,41 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-api-gateway" />
-        <module name="eureka-service" />
-        <module name="eureka-second-service" />
-        <module name="security-reactive-service" />
-        <module name="hystrix-dashboard" />
-        <module name="config-service" />
-        <module name="zipkin-service" />
-        <module name="feigns" />
-        <module name="security-service" />
-        <module name="api-gateway" />
-        <module name="feigns-error" />
-        <module name="spring-cloud-stream-kafka-example" />
-        <module name="admin-service" />
-      </profile>
-      <profile name="Annotation profile for mirbozorgi-micro-service" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="medrick-item-shop-service-business" />
-        <module name="medrick-notification-service-core" />
-        <module name="mirbozorgi-cohort-service-api" />
         <module name="mirbozorgi-game-service-business" />
         <module name="mirbozorgi-challenge-service-business" />
         <module name="mirbozorgi-cohort-service-core" />
         <module name="medrick-item-shop-service-core" />
-        <module name="medrick-leaderboard-service-core" />
         <module name="medrick-leaderboard-service-business" />
-        <module name="mirbozorgi-user-service-core" />
         <module name="mirbozorgi-cohort-service-business" />
-        <module name="medrick-match-service-business" />
-        <module name="mirbozorgi-game-service-core" />
+        <module name="eureka-service" />
         <module name="mirbozorgi-game-service-api" />
-        <module name="medrick-item-shop-service-api" />
-        <module name="medrick-leaderboard-service-api" />
-        <module name="mirbozorgi-challenge-service-core" />
+        <module name="eureka-second-service" />
+        <module name="security-reactive-service" />
+        <module name="hystrix-dashboard" />
         <module name="mirbozorgi-challenge-service-api" />
-        <module name="medrick-notification-service-business" />
         <module name="mirbozorgi-user-service-business" />
         <module name="mirbozorgi-user-service-api" />
-        <module name="medrick-notification-service-api" />
         <module name="medrick-match-service-api" />
+        <module name="medrick-notification-service-core" />
+        <module name="mirbozorgi-cohort-service-api" />
+        <module name="config-service" />
+        <module name="zipkin-service" />
+        <module name="medrick-leaderboard-service-core" />
+        <module name="feigns" />
+        <module name="mirbozorgi-user-service-core" />
+        <module name="medrick-match-service-business" />
+        <module name="mirbozorgi-game-service-core" />
+        <module name="medrick-item-shop-service-api" />
+        <module name="security-service" />
+        <module name="medrick-leaderboard-service-api" />
+        <module name="api-gateway" />
+        <module name="mirbozorgi-challenge-service-core" />
+        <module name="feigns-error" />
+        <module name="medrick-notification-service-business" />
+        <module name="medrick-notification-service-api" />
+        <module name="spring-cloud-stream-kafka-example" />
+        <module name="admin-service" />
         <module name="medrick-match-service-core" />
       </profile>
     </annotationProcessing>
@@ -143,6 +138,7 @@
       <module name="mirbozorgi-user-service-api" options="-parameters" />
       <module name="mirbozorgi-user-service-business" options="-parameters" />
       <module name="mirbozorgi-user-service-core" options="-parameters" />
+      <module name="security-reactive-service" options="-parameters" />
       <module name="security-service" options="-parameters" />
       <module name="spring-cloud-api-gateway" options="-parameters" />
       <module name="spring-cloud-stream-kafka-example" options="-parameters" />
