@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.9.RELEASE</version>
+    <version>2.1.2.RELEASE</version>
   </parent>
 
   <groupId>demo.spring.cloud</groupId>
@@ -19,7 +19,7 @@
   <description>mirbozorgi micro service</description>
 
   <properties>
-    <java.version>11</java.version>
+    <java.version>1.8</java.version>
     <mysql.connector.version>5.1.35</mysql.connector.version>
     <skipDockerBuild>true</skipDockerBuild>
     <logback.version>1.1.6</logback.version>
@@ -41,7 +41,7 @@
     <module>notification-service/src</module>
     <module>item-shop-service/src</module>
     <!--    <module>feigns</module>-->
-    <module>feigns-error</module>
+<!--    <module>feigns-error</module>-->
     <module>support</module>
     <module>spring-cloud-stream-kafka-example</module>
   </modules>

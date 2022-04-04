@@ -19,7 +19,7 @@
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+
   </properties>
 
   <dependencies>
@@ -117,15 +117,11 @@
       <artifactId>spring-cloud-starter-eureka</artifactId>
       <version>1.2.0.RELEASE</version>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-      <version>1.0.9.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
-      <version>1.0.9.RELEASE</version>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
 
 
@@ -141,10 +137,7 @@
       </exclusions>
     </dependency>
 
-    <!--*** zipkin and sleuth ***-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
+
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -152,7 +145,8 @@
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
 
   </dependencies>

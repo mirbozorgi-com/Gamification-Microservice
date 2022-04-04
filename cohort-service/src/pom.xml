@@ -13,7 +13,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.9.RELEASE</version>
+    <version>2.1.2.RELEASE</version>
   </parent>
 
 
@@ -21,7 +21,7 @@
   <artifactId>mirbozorgi-cohort-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>mirbozorgi-cohort-service</name>
-  <description>Demo project for Spring Boot</description>
+  <description>Mirbozorgi Project For Microservice</description>
 
 
   <properties>
@@ -30,7 +30,7 @@
     <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -129,15 +129,13 @@
       <artifactId>spring-cloud-starter-eureka</artifactId>
       <version>1.2.0.RELEASE</version>
     </dependency>
+
+
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-      <version>1.0.9.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
-      <version>2.1.3.RELEASE</version>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
 
 
@@ -182,11 +180,7 @@
       <version>1.9</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.hashids</groupId>
-      <artifactId>hashids</artifactId>
-      <version>1.0.1</version>
-    </dependency>
+
 
     <dependency>
       <groupId>joda-time</groupId>
@@ -194,20 +188,16 @@
       <version>2.9.4</version>
     </dependency>
 
-
-    <!--*** zipkin and sleuth ***-->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-log4j2</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
-    </dependency>
+
 
 
   </dependencies>

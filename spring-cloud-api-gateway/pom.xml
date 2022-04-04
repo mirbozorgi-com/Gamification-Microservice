@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.9.RELEASE</version>
+    <version>2.1.2.RELEASE</version>
   </parent>
   <groupId>com.mirbozorgi.spring-cloud-api-gateway</groupId>
   <artifactId>spring-cloud-api-gateway</artifactId>
@@ -18,7 +18,7 @@
     <spring-cloud.version>2020.0.1</spring-cloud.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+
   </properties>
   <dependencies>
 
@@ -45,6 +45,7 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
@@ -81,20 +82,16 @@
     </dependency>
 
 
-    <!--*** zipkin and sleuth ***-->
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-log4j2</artifactId>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
-
 
   </dependencies>
   <dependencyManagement>

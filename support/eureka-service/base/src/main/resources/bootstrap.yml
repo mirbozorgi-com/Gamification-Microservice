@@ -4,14 +4,14 @@ spring:
   cloud:
     config:
       enabled: true
-      uri: http://${MICRO_CONFIG_URL:localhost}:${MICRO_CONFIG_PORT:8888}
-      label: master
-      profile: prod
-
-
----
-spring:
-  profiles: prod
-  cloud:
-    config:
       uri: http://${MICRO_CONFIG_URL:127.0.0.1}:${MICRO_CONFIG_PORT:8888}
+      label: main
+      profile: dev
+
+
+#---
+#spring:
+#  profiles: prod
+#  cloud:
+#    config:
+#      uri: http://${MICRO_CONFIG_URL:127.0.0.1}:${MICRO_CONFIG_PORT:8888}
