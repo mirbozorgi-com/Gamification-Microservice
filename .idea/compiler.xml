@@ -102,7 +102,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Gamification-Microservice" options="-parameters" />
+      <module name="Gamification-Microservice" options="" />
       <module name="admin-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="config-service" options="-parameters" />

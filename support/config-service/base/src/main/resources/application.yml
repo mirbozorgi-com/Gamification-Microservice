@@ -14,5 +14,5 @@ spring:
       server:
         git:
           uri: https://github.com/mirbozorgi-com/Gamification-Microservice-Config-Repo
-          default-label: main
+          default-label: master
           cloneOnStart: true
