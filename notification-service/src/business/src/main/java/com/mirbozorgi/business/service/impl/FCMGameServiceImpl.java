@@ -1,7 +1,7 @@
 package com.mirbozorgi.business.service.impl;
 
 import com.mirbozorgi.business.exception.NotFoundException;
-import com.mirbozorgi.business.service.FCMGameService;
+import com.mirbozorgi.business.service.FCMarsalanervice;
 import com.mirbozorgi.core.entity.FCMGame;
 import com.mirbozorgi.core.repository.entity.FcmGameRepository;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class FCMGameServiceImpl implements FCMGameService {
+public class FCMarsalanerviceImpl implements FCMarsalanervice {
 
   @Autowired
   private FcmGameRepository repository;

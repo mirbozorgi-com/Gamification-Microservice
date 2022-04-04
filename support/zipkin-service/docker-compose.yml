@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   app:
-    image:  repository.mirbozorgigames.com/micro/zipkin-service:0.0.1
+    image:  repository.mirbozorgiarsalan.com/micro/zipkin-service:0.0.1
     networks:
       - mainnet
     ports:

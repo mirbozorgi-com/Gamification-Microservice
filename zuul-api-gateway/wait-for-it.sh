@@ -1,8 +1,9 @@
 #!/bin/bash
 set -eux
 
-declare -r CONFIG="lucifer.mirbozorgigames.com:8888/api-getways-services/prod/master"
-declare -r EUREKA="lucifer.mirbozorgigames.com:8761"
+declare -r CONFIG="mirbozorgiarsalan.com:8888/api-getways-services/prod/master"
+declare -r EUREKA="mirbozorgiarsalan.com:8761"
+
 wait-for-url() {
     echo "Testing $1"
     timeout -t 12000 bash -c \

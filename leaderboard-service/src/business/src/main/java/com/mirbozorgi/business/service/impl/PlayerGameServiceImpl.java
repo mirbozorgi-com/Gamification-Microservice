@@ -1,9 +1,9 @@
 package com.mirbozorgi.business.service.impl;
 
-import com.mirbozorgi.business.service.PlayerGameScoreService;
+import com.mirbozorgi.business.service.PlayerarsalancoreService;
 import com.mirbozorgi.business.service.TimeService;
-import com.mirbozorgi.core.domain.PlayerGameScore;
-import com.mirbozorgi.core.repository.document.PlayerGameScoreRepository;
+import com.mirbozorgi.core.domain.Playerarsalancore;
+import com.mirbozorgi.core.repository.document.PlayerarsalancoreRepository;
 import com.mirbozorgi.core.repository.memory.LeaderBoardMemoryRepository;
 import java.util.LinkedHashMap;
 import mirbozorgi.base.feignService.ChallengeFeignService;
@@ -12,10 +12,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PlayerGameServiceImpl implements PlayerGameScoreService {
+public class PlayerarsalanerviceImpl implements PlayerarsalancoreService {
 
   @Autowired
-  private PlayerGameScoreRepository playerGameScoreRepository;
+  private PlayerarsalancoreRepository playerarsalancoreRepository;
 
   @Autowired
   private TimeService timeService;
@@ -32,7 +32,7 @@ public class PlayerGameServiceImpl implements PlayerGameScoreService {
 
 
   @Override
-  public PlayerGameScore add(
+  public Playerarsalancore add(
       String gamePackageName,
       String marketName,
       String env,
@@ -44,7 +44,7 @@ public class PlayerGameServiceImpl implements PlayerGameScoreService {
     if (allMarketInclude) {
       marketName = defaultMarket;
     }
-    PlayerGameScore playerGameScore = new PlayerGameScore(0,
+    Playerarsalancore playerarsalancore = new Playerarsalancore(0,
         timeService.getNowUnixFromInstantClass(),
         username);
 
@@ -57,19 +57,19 @@ public class PlayerGameServiceImpl implements PlayerGameScoreService {
         userUuId
     );
 
-    return playerGameScoreRepository.add(
+    return playerarsalancoreRepository.add(
         gamePackageName,
         marketName,
         env,
         challengeId,
         userUuId,
-        playerGameScore
+        playerarsalancore
     );
   }
 
 
   @Override
-  public int incGameScore(
+  public int incarsalancore(
       String gamePackageName,
       String marketName,
       String env,
@@ -87,7 +87,7 @@ public class PlayerGameServiceImpl implements PlayerGameScoreService {
         score,
         userUuId);
 
-    return playerGameScoreRepository.incGameScore(
+    return playerarsalancoreRepository.incarsalancore(
         gamePackageName,
         marketName,
         env,

@@ -12,10 +12,10 @@
   </parent>
 
 
-  <artifactId>api-gateway</artifactId>
+  <artifactId>zuul-api-gateway</artifactId>
   <version>1.0.0-SNAPSHOT</version>
-  <name>api-gateway</name>
-  <description>API Gateway</description>
+  <name>zuul-api-gateway</name>
+  <description>Zuul API Gateway</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

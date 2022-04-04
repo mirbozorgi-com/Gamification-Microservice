@@ -1,7 +1,7 @@
 package com.mirbozorgi.business.service.impl;
 
 import com.mirbozorgi.business.service.FCMGameMessageService;
-import com.mirbozorgi.business.service.FCMGameService;
+import com.mirbozorgi.business.service.FCMarsalanervice;
 import com.mirbozorgi.core.entity.FCMGame;
 import com.mirbozorgi.core.entity.FCMGameMessage;
 import com.mirbozorgi.core.repository.entity.FCMGameMessageRepository;
@@ -22,13 +22,13 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
   private FCMGameMessageRepository repository;
 
   @Autowired
-  private FCMGameService fcmGameService;
+  private FCMarsalanervice fcmarsalanervice;
 
   @Override
   public FCMGameMessageInfo findBy(String gamePackageName,
       String env,
       String marketName, EnumKeyFCM enumKeyFCM) {
-    FCMGame fcmGame = fcmGameService.findBy(gamePackageName,
+    FCMGame fcmGame = fcmarsalanervice.findBy(gamePackageName,
         env,
         marketName);
     FCMGameMessage by = repository.findBy(fcmGame, enumKeyFCM);
@@ -49,7 +49,7 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
       String gamePackageName,
       String env,
       String marketName) {
-    FCMGame fcmGame = fcmGameService.findBy(gamePackageName,
+    FCMGame fcmGame = fcmarsalanervice.findBy(gamePackageName,
         env,
         marketName);
     FCMGameMessage fcmGameMessage = new FCMGameMessage(
@@ -73,7 +73,7 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
       String marketName) {
     List<FCMGameMessageInfo> fcmGameMessageInfos = new ArrayList<>();
 
-    FCMGame fcmGame = fcmGameService.findBy(gamePackageName,
+    FCMGame fcmGame = fcmarsalanervice.findBy(gamePackageName,
         env,
         marketName);
     List<FCMGameMessage> all = repository.findAll(fcmGame);

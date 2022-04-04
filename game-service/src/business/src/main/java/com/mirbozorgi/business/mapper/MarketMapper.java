@@ -29,9 +29,9 @@ public class MarketMapper {
         market.getInstagramUrl(),
         market.getLastVersion(),
         market.getSupportedVersion(),
-        market.getGames().stream().map(urEntity -> urEntity.getId()).collect(
+        market.getarsalan().stream().map(urEntity -> urEntity.getId()).collect(
             Collectors.toList()),
-        market.getGames().stream().map(urEntity -> urEntity.getPackageName()).collect(
+        market.getarsalan().stream().map(urEntity -> urEntity.getPackageName()).collect(
             Collectors.toList())
 
     );

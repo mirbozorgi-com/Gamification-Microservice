@@ -3,7 +3,7 @@ package com.mirbozorgi.business.service;
 import com.mirbozorgi.core.entity.FCMGame;
 import java.util.List;
 
-public interface FCMGameService {
+public interface FCMarsalanervice {
 
   FCMGame findBy(
       String gamePackageName,

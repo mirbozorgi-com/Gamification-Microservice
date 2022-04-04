@@ -1,20 +1,20 @@
 package com.mirbozorgi.core.repository.document;
 
-import com.mirbozorgi.core.domain.PlayerGameScore;
+import com.mirbozorgi.core.domain.Playerarsalancore;
 
-public interface PlayerGameScoreRepository {
+public interface PlayerarsalancoreRepository {
 
-  PlayerGameScore add(
+  Playerarsalancore add(
       String gamePackageName,
       String marketName,
       String env,
       String challengeId,
       String userUuId,
-      PlayerGameScore playerGameScore
+      Playerarsalancore playerarsalancore
   );
 
 
-  PlayerGameScore get(
+  Playerarsalancore get(
       String gamePackageName,
       String marketName,
       String env,
@@ -22,7 +22,7 @@ public interface PlayerGameScoreRepository {
       String userUuId
   );
 
-  int incGameScore(
+  int incarsalancore(
       String gamePackageName,
       String marketName,
       String env,

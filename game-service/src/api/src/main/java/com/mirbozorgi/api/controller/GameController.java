@@ -4,7 +4,7 @@ import com.mirbozorgi.api.controller.base.BaseController;
 import com.mirbozorgi.api.model.AddGameModel;
 import com.mirbozorgi.api.model.UpdateGameModel;
 import com.mirbozorgi.api.util.helper.ResponseHelper;
-import com.mirbozorgi.business.service.GameService;
+import com.mirbozorgi.business.service.arsalanervice;
 import mirbozorgi.base.context.CurrentContextService;
 import mirbozorgi.base.context.aop.anotions.GameProperties;
 import mirbozorgi.base.context.aop.anotions.SuperAdmin;
@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GameController extends BaseController {
 
   @Autowired
-  private GameService gameService;
+  private arsalanervice arsalanervice;
 
   @Autowired
   private CurrentContextService currentContextService;
@@ -31,7 +31,7 @@ public class GameController extends BaseController {
   @SuperAdmin
   @RequestMapping(value = "/get", method = RequestMethod.GET)
   public ResponseEntity get(@RequestParam int id) {
-    return ResponseHelper.response(gameService.getById(id));
+    return ResponseHelper.response(arsalanervice.getById(id));
   }
 
 
@@ -39,7 +39,7 @@ public class GameController extends BaseController {
   @RequestMapping(value = "/get-by", method = RequestMethod.GET)
   public ResponseEntity getByPackageName(@RequestParam String gamePackageName,
       @RequestParam String env) {
-    return ResponseHelper.response(gameService.getByPackageNameAndEnv(
+    return ResponseHelper.response(arsalanervice.getByPackageNameAndEnv(
         gamePackageName,
         env
     ));
@@ -48,13 +48,13 @@ public class GameController extends BaseController {
   @SuperAdmin
   @RequestMapping(value = "/get-all", method = RequestMethod.GET)
   public ResponseEntity getAll() {
-    return ResponseHelper.response(gameService.getAll());
+    return ResponseHelper.response(arsalanervice.getAll());
   }
 
   @SuperAdmin
   @RequestMapping(value = "/add", method = RequestMethod.POST)
   public ResponseEntity add(@RequestBody AddGameModel model) {
-    return ResponseHelper.response(gameService.save(
+    return ResponseHelper.response(arsalanervice.save(
         model.getName(),
         currentContextService.getCurrentGamePackageName(),
         model.isActive(),
@@ -79,7 +79,7 @@ public class GameController extends BaseController {
   @SuperAdmin
   @RequestMapping(value = "/update", method = RequestMethod.POST)
   public ResponseEntity update(@RequestBody UpdateGameModel model) {
-    return ResponseHelper.response(gameService.update(
+    return ResponseHelper.response(arsalanervice.update(
         model.getId(),
         model.getName(),
         currentContextService.getCurrentGamePackageName(),

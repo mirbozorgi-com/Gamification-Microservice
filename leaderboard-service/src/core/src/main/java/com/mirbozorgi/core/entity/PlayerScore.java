@@ -1,7 +1,7 @@
 package com.mirbozorgi.core.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.mirbozorgi.core.domain.PlayerGameScore;
+import com.mirbozorgi.core.domain.Playerarsalancore;
 import java.util.HashMap;
 import java.util.Map;
 import org.bson.types.ObjectId;
@@ -17,20 +17,20 @@ public class PlayerScore {
   private String userUuId;
 
   //key : packageName.env.marketName.challengeId
-  private Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerGameScore;
+  private Map<String, Map<String, Map<String, Map<String, Playerarsalancore>>>> playerarsalancore;
 
   public PlayerScore(String userUuId,
-      Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerGameScore) {
+      Map<String, Map<String, Map<String, Map<String, Playerarsalancore>>>> playerarsalancore) {
     this.userUuId = userUuId;
-    this.playerGameScore = playerGameScore;
+    this.playerarsalancore = playerarsalancore;
   }
 
   public PlayerScore() {
-    playerGameScore = new HashMap<>();
+    playerarsalancore = new HashMap<>();
   }
 
-  public Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> getPlayerGameScore() {
-    return playerGameScore;
+  public Map<String, Map<String, Map<String, Map<String, Playerarsalancore>>>> getPlayerarsalancore() {
+    return playerarsalancore;
   }
 
   public ObjectId getId() {

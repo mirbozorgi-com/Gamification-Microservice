@@ -87,11 +87,11 @@ public class Market {
 
 
   @ManyToMany(mappedBy = "markets", cascade = CascadeType.PERSIST)
-  private List<Game> games;
+  private List<Game> arsalan;
 
 
   public Market() {
-    games = new ArrayList<>();
+    arsalan = new ArrayList<>();
   }
 
   public Market(String name, MarketType marketType, String clientId, String clientSecret,
@@ -100,7 +100,7 @@ public class Market {
       String verificationUrl, String refreshTokenUrl, int refreshTokenTimeOut,
       String accessToken, String marketUrl, String telegramUrl, String instagramUrl,
       int lastVersion,
-      int supportedVersion, List<Game> games) {
+      int supportedVersion, List<Game> arsalan) {
     this.name = name;
     this.marketType = marketType;
     this.clientId = clientId;
@@ -120,7 +120,7 @@ public class Market {
     this.instagramUrl = instagramUrl;
     this.lastVersion = lastVersion;
     this.supportedVersion = supportedVersion;
-    this.games = games;
+    this.arsalan = arsalan;
   }
 
   public int getId() {
@@ -203,7 +203,7 @@ public class Market {
     return supportedVersion;
   }
 
-  public List<Game> getGames() {
-    return games;
+  public List<Game> getarsalan() {
+    return arsalan;
   }
 }

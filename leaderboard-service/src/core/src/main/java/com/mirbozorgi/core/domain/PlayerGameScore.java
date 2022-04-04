@@ -3,7 +3,7 @@ package com.mirbozorgi.core.domain;
 import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 
-public class PlayerGameScore {
+public class Playerarsalancore {
 
 
   @Indexed(direction = IndexDirection.DESCENDING)
@@ -14,13 +14,13 @@ public class PlayerGameScore {
   private String username;
 
 
-  public PlayerGameScore(int score, long lastUpdateScoreDate, String username) {
+  public Playerarsalancore(int score, long lastUpdateScoreDate, String username) {
     this.score = score;
     this.lastUpdateScoreDate = lastUpdateScoreDate;
     this.username = username;
   }
 
-  public PlayerGameScore() {
+  public Playerarsalancore() {
   }
 
   public String getUsername() {

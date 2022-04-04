@@ -40,13 +40,13 @@
         <module name="mirbozorgi-notification-service-business" />
         <module name="mirbozorgi-game-service-core" />
         <module name="security-service" />
-        <module name="api-gateway" />
         <module name="mirbozorgi-challenge-service-core" />
         <module name="admin-service" />
         <module name="spring-cloud-stream-kafka-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
       <module name="eureka-second-service" target="1.8" />
       <module name="feigns-error" target="1.8" />
       <module name="medrick-advertisement-service" target="1.8" />

@@ -3,7 +3,7 @@ package com.mirbozorgi.business.firebase;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import com.mirbozorgi.business.service.FCMGameService;
+import com.mirbozorgi.business.service.FCMarsalanervice;
 import com.mirbozorgi.core.entity.FCMGame;
 import java.io.IOException;
 import javax.annotation.PostConstruct;
@@ -15,13 +15,13 @@ import org.springframework.stereotype.Service;
 public class FCMInitializer {
 
   @Autowired
-  private FCMGameService fcmGameService;
+  private FCMarsalanervice fcmarsalanervice;
 
 
   @PostConstruct
   public void initialize() {
 
-    for (FCMGame fcmGame : fcmGameService.findAll()) {
+    for (FCMGame fcmGame : fcmarsalanervice.findAll()) {
       String key = String.format("fcm_%s_%s_%s",
           fcmGame.getGamePackageName(),
           fcmGame.getEnv(),

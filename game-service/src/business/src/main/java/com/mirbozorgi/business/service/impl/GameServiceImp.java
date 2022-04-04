@@ -4,7 +4,7 @@ import com.mirbozorgi.business.domain.GameInfo;
 import com.mirbozorgi.business.exception.NotFoundException;
 import com.mirbozorgi.business.exception.PackageNameOrEnvNotFoundException;
 import com.mirbozorgi.business.mapper.GameMapper;
-import com.mirbozorgi.business.service.GameService;
+import com.mirbozorgi.business.service.arsalanervice;
 import com.mirbozorgi.core.entity.Game;
 import com.mirbozorgi.core.entity.Market;
 import com.mirbozorgi.core.repository.entity.GameRepository;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class GameServiceImp implements GameService {
+public class arsalanerviceImp implements arsalanervice {
 
   @Autowired
   private GameRepository gameRepository;

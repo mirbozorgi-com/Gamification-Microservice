@@ -45,7 +45,7 @@ public class UserMapper {
         statistic.getWin(),
         statistic.getLose(),
         statistic.getInvitations(),
-        statistic.getGamesParticipated(),
+        statistic.getarsalanParticipated(),
         statistic.getHamiCount(),
         statistic.getGemSpent()
     );
@@ -64,7 +64,7 @@ public class UserMapper {
         statistic.getWin(),
         statistic.getLose(),
         statistic.getInvitations(),
-        statistic.getGamesParticipated(),
+        statistic.getarsalanParticipated(),
         statistic.getHamiCount(),
         statistic.getGemSpent()
     );

@@ -26,7 +26,7 @@
   </properties>
 
   <modules>
-    <module>api-gateway/base</module>
+    <module>zuul-api-gateway/base</module>
     <module>spring-cloud-api-gateway</module>
     <module>feigns</module>
     <module>security-service</module>
