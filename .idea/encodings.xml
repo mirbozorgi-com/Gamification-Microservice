@@ -28,6 +28,9 @@
     <file url="file://$PROJECT_DIR$/cohort-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feigns/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feigns/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/game-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/game-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/game-service/src/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/giftcode-service/src/api/src/main/java" charset="UTF-8" />
