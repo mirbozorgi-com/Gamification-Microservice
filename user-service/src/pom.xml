@@ -157,18 +157,9 @@
       <version>${jedis.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>net.logstash.logback</groupId>
-      <artifactId>logstash-logback-encoder</artifactId>
-      <version>4.9</version>
-    </dependency>
 
     <!--*** zipkin and sleuth ***-->
 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-log4j2</artifactId>
-    </dependency>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-sleuth-zipkin</artifactId>
@@ -191,7 +182,6 @@
       <artifactId>commons-codec</artifactId>
       <version>1.9</version>
     </dependency>
-
 
 
     <dependency>

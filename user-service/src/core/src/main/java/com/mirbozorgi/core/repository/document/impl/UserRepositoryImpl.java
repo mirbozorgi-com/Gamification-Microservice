@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import net.logstash.logback.encoder.org.apache.commons.lang.StringUtils;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -102,7 +101,7 @@ public class UserRepositoryImpl implements UserRepository {
       uuid = "";
     }
 
-    if (!StringUtils.isEmpty(uuid)) {
+    if (!uuid.isEmpty()) {
       where.add(where("uuid").is(uuid));
     }
 

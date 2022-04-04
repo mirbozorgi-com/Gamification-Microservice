@@ -23,7 +23,6 @@
         <module name="mirbozorgi-game-service-api" />
         <module name="mirbozorgi-match-service-core" />
         <module name="security-reactive-service" />
-        <module name="eureka-second-service" />
         <module name="mirbozorgi-giftcode-service-core" />
         <module name="hystrix-dashboard" />
         <module name="mirbozorgi-challenge-service-api" />
@@ -49,6 +48,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka-second-service" target="1.8" />
       <module name="feigns-error" target="1.8" />
       <module name="medrick-advertisement-service" target="1.8" />
       <module name="medrick-advertisement-service-api" target="1.8" />
@@ -98,7 +98,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Gamification-Microservice" options="" />
+      <module name="Gamification-Microservice" options="-parameters" />
       <module name="admin-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="config-service" options="-parameters" />
