@@ -7,7 +7,6 @@ import com.mirbozorgi.core.repository.document.UsedGiftCodeRepository;
 import com.mirbozorgi.core.docuemnt.UsedGiftCode;
 import java.util.ArrayList;
 import java.util.List;
-import net.logstash.logback.encoder.org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.CriteriaDefinition;
@@ -78,23 +77,23 @@ public class UsedGiftCodeRepositoryImpl implements UsedGiftCodeRepository {
       marketName = "";
     }
 
-    if (!StringUtils.isEmpty(code)) {
+    if (!code.isEmpty()) {
       where.add(where("code").is(code));
     }
 
-    if (!StringUtils.isEmpty(userUuId)) {
+    if (!userUuId.isEmpty()) {
       where.add(where("userUuId").is(userUuId));
     }
 
-    if (!StringUtils.isEmpty(gamePackageName)) {
+    if (!gamePackageName.isEmpty()) {
       where.add(where("gamePackageName").is(gamePackageName));
     }
 
-    if (!StringUtils.isEmpty(env)) {
+    if (!env.isEmpty()) {
       where.add(where("env").is(env));
     }
 
-    if (!StringUtils.isEmpty(marketName)) {
+    if (!marketName.isEmpty()) {
       where.add(where("marketName").is(marketName));
     }
 
