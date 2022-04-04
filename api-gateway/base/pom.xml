@@ -59,6 +59,7 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-eureka</artifactId>
+      <version>1.2.0.RELEASE</version>
     </dependency>
 
     <dependency>
@@ -69,6 +70,7 @@
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-zuul</artifactId>
+      <version>1.4.7.RELEASE</version>
     </dependency>
 
 
@@ -84,21 +86,13 @@
       <groupId>org.jolokia</groupId>
       <artifactId>jolokia-core</artifactId>
     </dependency>
-    <dependency>
-      <groupId>net.logstash.logback</groupId>
-      <artifactId>logstash-logback-encoder</artifactId>
-    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
 
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-log4j2</artifactId>
-    </dependency>
 
     <dependency>
       <groupId>org.springframework.cloud</groupId>

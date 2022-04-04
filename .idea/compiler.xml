@@ -13,6 +13,7 @@
         <module name="mirbozorgi-match-service-business" />
         <module name="mirbozorgi-leaderboard-service-core" />
         <module name="mirbozorgi-cohort-service-core" />
+        <module name="mirbozorgi-giftcode-service-api" />
         <module name="mirbozorgi-item-shop-service-api" />
         <module name="mirbozorgi-leaderboard-service-api" />
         <module name="mirbozorgi-cohort-service-business" />
@@ -23,23 +24,22 @@
         <module name="mirbozorgi-match-service-core" />
         <module name="security-reactive-service" />
         <module name="eureka-second-service" />
+        <module name="mirbozorgi-giftcode-service-core" />
         <module name="hystrix-dashboard" />
         <module name="mirbozorgi-challenge-service-api" />
         <module name="mirbozorgi-user-service-business" />
         <module name="mirbozorgi-user-service-api" />
-        <module name="mirbozorgi-giftCode-service-business" />
         <module name="mirbozorgi-cohort-service-api" />
+        <module name="mirbozorgi-giftcode-service-business" />
         <module name="config-service" />
         <module name="mirbozorgi-item-shop-service-core" />
         <module name="mirbozorgi-match-service-api" />
         <module name="mirbozorgi-leaderboard-service-business" />
         <module name="zipkin-service" />
         <module name="mirbozorgi-notification-service-api" />
-        <module name="mirbozorgi-giftCode-service-api" />
         <module name="feigns" />
         <module name="mirbozorgi-user-service-core" />
         <module name="mirbozorgi-notification-service-business" />
-        <module name="mirbozorgi-giftCode-service-core" />
         <module name="mirbozorgi-game-service-core" />
         <module name="security-service" />
         <module name="api-gateway" />
@@ -94,10 +94,6 @@
       <module name="medrick-userHami-service-api" target="1.8" />
       <module name="medrick-userHami-service-business" target="1.8" />
       <module name="medrick-userHami-service-core" target="1.8" />
-      <module name="mirbozorgi-giftcode-service" target="1.8" />
-      <module name="mirbozorgi-giftcode-service-api" target="1.8" />
-      <module name="mirbozorgi-giftcode-service-business" target="1.8" />
-      <module name="mirbozorgi-giftcode-service-core" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -153,9 +149,6 @@
       <module name="mirbozorgi-game-service-api" options="-parameters" />
       <module name="mirbozorgi-game-service-business" options="-parameters" />
       <module name="mirbozorgi-game-service-core" options="-parameters" />
-      <module name="mirbozorgi-giftCode-service-api" options="-parameters" />
-      <module name="mirbozorgi-giftCode-service-business" options="-parameters" />
-      <module name="mirbozorgi-giftCode-service-core" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-api" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-business" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-core" options="-parameters" />

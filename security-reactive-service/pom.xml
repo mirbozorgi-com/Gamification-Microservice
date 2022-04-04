@@ -13,8 +13,8 @@
   <groupId>com.mirbozorgi.reactor.security</groupId>
   <artifactId>security-reactive-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>lucifer</name>
-  <description>reactor security for lucifer</description>
+  <name>Reactive</name>
+  <description>reactor security for Mirbozorgi</description>
 
   <properties>
     <java.version>1.8</java.version>
