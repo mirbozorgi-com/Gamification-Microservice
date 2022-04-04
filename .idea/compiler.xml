@@ -22,7 +22,6 @@
         <module name="mirbozorgi-notification-service-core" />
         <module name="mirbozorgi-game-service-api" />
         <module name="mirbozorgi-match-service-core" />
-        <module name="security-reactive-service" />
         <module name="mirbozorgi-giftcode-service-core" />
         <module name="hystrix-dashboard" />
         <module name="mirbozorgi-challenge-service-api" />
@@ -94,6 +93,7 @@
       <module name="medrick-userHami-service-api" target="1.8" />
       <module name="medrick-userHami-service-business" target="1.8" />
       <module name="medrick-userHami-service-core" target="1.8" />
+      <module name="security-reactive-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
