@@ -3,7 +3,7 @@ package com.mirbozorgi.api.controller;
 import com.mirbozorgi.api.util.helper.ResponseHelper;
 import com.mirbozorgi.api.model.AddModel;
 import com.mirbozorgi.business.service.LeaderBoardService;
-import com.mirbozorgi.business.service.PlayerarsalancoreService;
+import com.mirbozorgi.business.service.PlayerGameScoreService;
 import mirbozorgi.base.context.CurrentContextService;
 import mirbozorgi.base.context.aop.anotions.GamePropertiesWithUuIdDefaultMarket;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ public class LeaderBoardController {
   private LeaderBoardService leaderBoardService;
 
   @Autowired
-  private PlayerarsalancoreService playerarsalancoreService;
+  private PlayerGameScoreService playerGameScoreService;
 
   @Autowired
   private CurrentContextService currentContextService;
@@ -32,7 +32,7 @@ public class LeaderBoardController {
   @GamePropertiesWithUuIdDefaultMarket
   @RequestMapping(value = "/add", method = RequestMethod.POST)
   public ResponseEntity add(@Validated @RequestBody AddModel model) {
-    return ResponseHelper.response(playerarsalancoreService.add(
+    return ResponseHelper.response(playerGameScoreService.add(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentMarket(),
         currentContextService.getCurrentEnv(),
@@ -49,7 +49,7 @@ public class LeaderBoardController {
   public ResponseEntity incScore(
       @RequestParam String challengeId,
       @RequestParam int score) {
-    return ResponseHelper.response(playerarsalancoreService.incarsalancore(
+    return ResponseHelper.response(playerGameScoreService.incGameScore(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentMarket(),
         currentContextService.getCurrentEnv(),
@@ -79,7 +79,7 @@ public class LeaderBoardController {
   @RequestMapping(value = "/get-position/score", method = RequestMethod.GET)
   public ResponseEntity getPos(
       @RequestParam String challengeId) {
-    return ResponseHelper.response(playerarsalancoreService.getPositionInLeaderBoard(
+    return ResponseHelper.response(playerGameScoreService.getPositionInLeaderBoard(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentMarket(),
         currentContextService.getCurrentEnv(),

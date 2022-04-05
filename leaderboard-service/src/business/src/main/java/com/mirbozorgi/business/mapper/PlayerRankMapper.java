@@ -5,7 +5,7 @@ import com.mirbozorgi.business.domain.PlayerGemBuyRankData;
 import com.mirbozorgi.business.domain.PlayerRankGemBuyHistoryData;
 import com.mirbozorgi.business.domain.PlayerRefralRankData;
 import com.mirbozorgi.business.domain.PlayerXpRankData;
-import com.mirbozorgi.core.domain.Playerarsalancore;
+import com.mirbozorgi.core.domain.PlayerGameScore;
 import com.mirbozorgi.core.domain.PlayerGemBuyData;
 import com.mirbozorgi.core.domain.PlayerRefralData;
 import com.mirbozorgi.core.domain.PlayerXpData;
@@ -30,15 +30,15 @@ public class PlayerRankMapper {
     gamePackageName = gamePackageName.replace(".", "_");
     int rank = 0;
     for (PlayerScore playerScore : playerScores) {
-      Playerarsalancore playerarsalancore = playerScore.getPlayerarsalancore().get(gamePackageName)
+      PlayerGameScore playerGameScore = playerScore.getPlayerarsalancore().get(gamePackageName)
           .get(env).get(marketName).get(challengeId);
 
       rank = rank + 1;
       playerRankScoreData.add(new PlayerRankScoreData(
           playerScore.getUserUuId(),
-          playerarsalancore.getUsername(),
+          playerGameScore.getUsername(),
           rank,
-          playerarsalancore.getScore()
+          playerGameScore.getScore()
       ));
 
     }

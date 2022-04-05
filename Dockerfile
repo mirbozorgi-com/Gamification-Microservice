@@ -2,7 +2,7 @@
 FROM openjdk:8-jre-alpine
 
 # Add Maintainer Info
-LABEL maintainer="http://www.mirbozorgiarsalan.com"
+LABEL maintainer="http://www.mirbozorgi.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp

@@ -2,7 +2,7 @@ package com.mirbozorgi.api.controller;
 
 import com.mirbozorgi.api.model.FcmGameModel;
 import com.mirbozorgi.api.util.helper.ResponseHelper;
-import com.mirbozorgi.business.service.FCMarsalanervice;
+import com.mirbozorgi.business.service.FCMGameService;
 import mirbozorgi.base.context.CurrentContextService;
 import mirbozorgi.base.context.aop.anotions.SuperAdmin;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FCMGameController {
 
   @Autowired
-  private FCMarsalanervice fcmarsalanervice;
+  private FCMGameService fcmarsalanervice;
 
 
   @Autowired

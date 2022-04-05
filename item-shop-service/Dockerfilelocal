@@ -1,4 +1,4 @@
-FROM repository.mirbozorgiarsalan.com/micro/base:2.0.0
+FROM repository.mirbozorgi.com/micro/base:2.0.0
 WORKDIR /app
 COPY src/api/target/item-shop-service.jar /app
 ENTRYPOINT ["java","-jar","/app/item-shop-service.jar"]

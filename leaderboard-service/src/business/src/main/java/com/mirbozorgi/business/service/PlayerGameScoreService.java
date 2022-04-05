@@ -1,10 +1,10 @@
 package com.mirbozorgi.business.service;
 
-import com.mirbozorgi.core.domain.Playerarsalancore;
+import com.mirbozorgi.core.domain.PlayerGameScore;
 
-public interface PlayerarsalancoreService {
+public interface PlayerGameScoreService {
 
-  Playerarsalancore add(
+  PlayerGameScore add(
       String gamePackageName,
       String marketName,
       String env,
@@ -13,7 +13,7 @@ public interface PlayerarsalancoreService {
       String username,
       Boolean allMarketInclude);
 
-  int incarsalancore(
+  int incGameScore(
       String gamePackageName,
       String marketName,
       String env,

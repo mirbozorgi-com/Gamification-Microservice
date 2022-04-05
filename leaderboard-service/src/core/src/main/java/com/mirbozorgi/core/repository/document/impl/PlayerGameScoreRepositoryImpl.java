@@ -2,10 +2,10 @@ package com.mirbozorgi.core.repository.document.impl;
 
 import static org.springframework.data.mongodb.core.query.Criteria.where;
 
-import com.mirbozorgi.core.domain.Playerarsalancore;
-import com.mirbozorgi.core.repository.document.CustomMongoRepository;
-import com.mirbozorgi.core.repository.document.PlayerarsalancoreRepository;
+import com.mirbozorgi.core.domain.PlayerGameScore;
 import com.mirbozorgi.core.entity.PlayerScore;
+import com.mirbozorgi.core.repository.document.CustomMongoRepository;
+import com.mirbozorgi.core.repository.document.PlayerGameScoreRepository;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,22 +14,22 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class PlayerarsalancoreRepositoryImpl implements PlayerarsalancoreRepository {
+public class PlayerGameScoreRepositoryImpl implements PlayerGameScoreRepository {
 
   @Autowired
   private CustomMongoRepository repository;
 
 
   @Override
-  public Playerarsalancore add(
+  public PlayerGameScore add(
       String gamePackageName,
       String marketName,
       String env,
       String challengeId,
       String userUuId,
-      Playerarsalancore playerarsalancore) {
+      PlayerGameScore playerGameScore) {
     gamePackageName = fix(gamePackageName);
-    Playerarsalancore founded = get(
+    PlayerGameScore founded = get(
         gamePackageName,
         marketName,
         env,
@@ -38,11 +38,11 @@ public class PlayerarsalancoreRepositoryImpl implements PlayerarsalancoreReposit
     );
 
     if (founded == null) {
-      founded = playerarsalancore;
-      Map<String, Playerarsalancore> step1 = new HashMap<>();
-      Map<String, Map<String, Playerarsalancore>> step2 = new HashMap<>();
-      Map<String, Map<String, Map<String, Playerarsalancore>>> step3 = new HashMap<>();
-      Map<String, Map<String, Map<String, Map<String, Playerarsalancore>>>> playerarsalancoreFinal = new HashMap<>();
+      founded = playerGameScore;
+      Map<String, PlayerGameScore> step1 = new HashMap<>();
+      Map<String, Map<String, PlayerGameScore>> step2 = new HashMap<>();
+      Map<String, Map<String, Map<String, PlayerGameScore>>> step3 = new HashMap<>();
+      Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerarsalancoreFinal = new HashMap<>();
 
       step1.put(challengeId, founded);
       step2.put(marketName, step1);
@@ -59,7 +59,7 @@ public class PlayerarsalancoreRepositoryImpl implements PlayerarsalancoreReposit
   }
 
   @Override
-  public Playerarsalancore get(
+  public PlayerGameScore get(
       String gamePackageName,
       String marketName,
       String env,

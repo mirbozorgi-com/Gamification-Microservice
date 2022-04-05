@@ -1,7 +1,7 @@
 package com.mirbozorgi.business.service.impl;
 
 import com.mirbozorgi.business.service.FCMGameMessageService;
-import com.mirbozorgi.business.service.FCMarsalanervice;
+import com.mirbozorgi.business.service.FCMGameService;
 import com.mirbozorgi.core.entity.FCMGame;
 import com.mirbozorgi.core.entity.FCMGameMessage;
 import com.mirbozorgi.core.repository.entity.FCMGameMessageRepository;
@@ -22,7 +22,7 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
   private FCMGameMessageRepository repository;
 
   @Autowired
-  private FCMarsalanervice fcmarsalanervice;
+  private FCMGameService fcmarsalanervice;
 
   @Override
   public FCMGameMessageInfo findBy(String gamePackageName,
