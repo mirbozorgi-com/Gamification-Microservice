@@ -28,6 +28,7 @@
         <module name="mirbozorgi-challenge-service-api" />
         <module name="mirbozorgi-user-service-business" />
         <module name="mirbozorgi-user-service-api" />
+        <module name="mirbozorgi-giftCode-service-business" />
         <module name="mirbozorgi-cohort-service-api" />
         <module name="mirbozorgi-giftcode-service-business" />
         <module name="config-service" />
@@ -36,9 +37,11 @@
         <module name="mirbozorgi-leaderboard-service-business" />
         <module name="zipkin-service" />
         <module name="mirbozorgi-notification-service-api" />
+        <module name="mirbozorgi-giftCode-service-api" />
         <module name="feigns" />
         <module name="mirbozorgi-user-service-core" />
         <module name="mirbozorgi-notification-service-business" />
+        <module name="mirbozorgi-giftCode-service-core" />
         <module name="mirbozorgi-game-service-core" />
         <module name="security-service" />
         <module name="mirbozorgi-challenge-service-core" />
@@ -150,6 +153,9 @@
       <module name="mirbozorgi-game-service-api" options="-parameters" />
       <module name="mirbozorgi-game-service-business" options="-parameters" />
       <module name="mirbozorgi-game-service-core" options="-parameters" />
+      <module name="mirbozorgi-giftCode-service-api" options="-parameters" />
+      <module name="mirbozorgi-giftCode-service-business" options="-parameters" />
+      <module name="mirbozorgi-giftCode-service-core" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-api" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-business" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-core" options="-parameters" />
