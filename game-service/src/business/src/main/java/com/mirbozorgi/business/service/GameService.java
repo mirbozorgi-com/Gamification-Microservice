@@ -4,7 +4,7 @@ import com.mirbozorgi.business.domain.GameInfo;
 import com.mirbozorgi.core.entity.Market;
 import java.util.List;
 
-public interface arsalanervice {
+public interface GameService {
 
 
   GameInfo getById(int id);

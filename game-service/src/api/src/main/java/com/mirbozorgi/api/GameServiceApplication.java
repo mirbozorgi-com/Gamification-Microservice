@@ -19,10 +19,10 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @EnableFeignClients(basePackages = {"mirbozorgi.base.feigns"})
 @EnableMongoRepositories("com.mirbozorgi.core.repository.docuemnt")
 
-public class arsalanerviceApplication {
+public class GameServiceApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(arsalanerviceApplication.class, args);
+    SpringApplication.run(GameServiceApplication.class, args);
   }
 
   @Bean

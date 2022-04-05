@@ -4,7 +4,7 @@ import com.mirbozorgi.business.domain.DailyRewardContinuesInfo;
 import com.mirbozorgi.business.domain.GameInfo;
 import com.mirbozorgi.business.mapper.DailyRewardContinuesMapper;
 import com.mirbozorgi.business.service.DailyRewardContinuesService;
-import com.mirbozorgi.business.service.arsalanervice;
+import com.mirbozorgi.business.service.GameService;
 import com.mirbozorgi.core.document.DailyRewardContinues;
 import com.mirbozorgi.core.domain.WalletChangeModelDailyReward;
 import com.mirbozorgi.core.repository.docuemnt.DailyRewardContinuesRepository;
@@ -20,14 +20,14 @@ public class DailyRewardContinuesServiceImpl implements DailyRewardContinuesServ
   private DailyRewardContinuesRepository repository;
 
   @Autowired
-  private arsalanervice arsalanervice;
+  private GameService gameService;
 
   @Override
   public DailyRewardContinuesInfo update(
       List<WalletChangeModelDailyReward> walletChangeModels,
       String name,
       int gameId) {
-    GameInfo game = arsalanervice.getById(gameId);
+    GameInfo game = gameService.getById(gameId);
     DailyRewardContinues update = repository.update(
         walletChangeModels,
         name,
