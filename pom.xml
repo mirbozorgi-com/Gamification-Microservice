@@ -29,7 +29,6 @@
     <module>spring-cloud-api-gateway</module>
     <module>feigns</module>
     <module>security-service</module>
-    <!--    <module>security-reactive-service</module>-->
     <module>game-service/src</module>
     <module>user-service/src</module>
     <module>cohort-service/src</module>
@@ -57,17 +56,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-<!--      <dependency>-->
-<!--        <groupId>net.logstash.logback</groupId>-->
-<!--        <artifactId>logstash-logback-encoder</artifactId>-->
-<!--        <version>4.7</version>-->
-<!--        <exclusions>-->
-<!--          <exclusion>-->
-<!--            <groupId>ch.qos.logback</groupId>-->
-<!--            <artifactId>logback-core</artifactId>-->
-<!--          </exclusion>-->
-<!--        </exclusions>-->
-<!--      </dependency>-->
     </dependencies>
   </dependencyManagement>
 
