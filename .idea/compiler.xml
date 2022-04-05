@@ -10,9 +10,9 @@
         <module name="spring-cloud-api-gateway" />
         <module name="mirbozorgi-game-service-business" />
         <module name="zuul-api-gateway" />
-        <module name="mirbozorgi-leaderboard-service-core" />
         <module name="mirbozorgi-challenge-service-business" />
         <module name="mirbozorgi-match-service-business" />
+        <module name="mirbozorgi-leaderboard-service-core" />
         <module name="mirbozorgi-cohort-service-core" />
         <module name="mirbozorgi-giftcode-service-api" />
         <module name="mirbozorgi-item-shop-service-api" />
@@ -42,6 +42,7 @@
         <module name="mirbozorgi-game-service-core" />
         <module name="security-service" />
         <module name="mirbozorgi-challenge-service-core" />
+        <module name="feigns-error" />
         <module name="admin-service" />
         <module name="spring-cloud-stream-kafka-example" />
       </profile>
@@ -49,7 +50,6 @@
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="eureka-second-service" target="1.8" />
-      <module name="feigns-error" target="1.8" />
       <module name="medrick-advertisement-service" target="1.8" />
       <module name="medrick-advertisement-service-api" target="1.8" />
       <module name="medrick-advertisement-service-business" target="1.8" />
@@ -99,7 +99,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Gamification-Microservice" options="-parameters" />
+      <module name="Gamification-Microservice" options="" />
       <module name="admin-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="config-service" options="-parameters" />

@@ -1,5 +1,6 @@
 package mirbozorgi.base.feignService;
 
+
 import mirbozorgi.base.domain.marketverification.VerifyResponse;
 
 public interface MarketVerificationService {

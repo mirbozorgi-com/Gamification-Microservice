@@ -32,6 +32,10 @@ with [GitHub]( https://github.com/mirbozorgi-com/Gamification-Microservice-Confi
 
 <hr style="border:2px solid gray"> </hr>
 
+☢️ FeignError Service : With this service all the errors in feign and chaining will be centralized,
+and you can detect the bottleneck manually(after implementation of Sentry.io, this service will be
+terminated.)
+
 ☢️ Challenge Service : You can create multiple challenges in order to user participation.
 
 ☢️ Cohort Service : You can assign cohort to users and do a/b testing

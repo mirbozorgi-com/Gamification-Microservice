@@ -24,6 +24,7 @@
     <file url="file://$PROJECT_DIR$/cohort-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feigns-error/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feigns/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feigns/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/api/src/main/java" charset="UTF-8" />
