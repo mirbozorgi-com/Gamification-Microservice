@@ -22,7 +22,7 @@ public interface PlayerGameScoreRepository {
       String userUuId
   );
 
-  int incGameScore(
+  int incarsalancore(
       String gamePackageName,
       String marketName,
       String env,

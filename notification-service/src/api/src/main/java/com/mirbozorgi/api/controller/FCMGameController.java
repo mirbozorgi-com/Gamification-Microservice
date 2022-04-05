@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FCMGameController {
 
   @Autowired
-  private FCMGameService fcmGameService;
+  private FCMGameService fcmarsalanervice;
 
 
   @Autowired
@@ -29,7 +29,7 @@ public class FCMGameController {
   @SuperAdmin
   @RequestMapping(value = "/add", method = RequestMethod.POST)
   public ResponseEntity add(@Validated @RequestBody FcmGameModel model) {
-    return ResponseHelper.response(fcmGameService.add(
+    return ResponseHelper.response(fcmarsalanervice.add(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentEnv(),
         currentContextService.getCurrentMarket(),
@@ -40,7 +40,7 @@ public class FCMGameController {
   @SuperAdmin
   @RequestMapping(value = "/update", method = RequestMethod.POST)
   public ResponseEntity update(@Validated @RequestBody FcmGameModel model) {
-    return ResponseHelper.response(fcmGameService.update(
+    return ResponseHelper.response(fcmarsalanervice.update(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentEnv(),
         currentContextService.getCurrentMarket(),
@@ -52,7 +52,7 @@ public class FCMGameController {
   @SuperAdmin
   @RequestMapping(value = "/get-by", method = RequestMethod.GET)
   public ResponseEntity update() {
-    return ResponseHelper.response(fcmGameService.findBy(
+    return ResponseHelper.response(fcmarsalanervice.findBy(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentEnv(),
         currentContextService.getCurrentMarket()));
@@ -61,7 +61,7 @@ public class FCMGameController {
   @SuperAdmin
   @RequestMapping(value = "/delete", method = RequestMethod.GET)
   public ResponseEntity delete() {
-    fcmGameService.delete(
+    fcmarsalanervice.delete(
         currentContextService.getCurrentGamePackageName(),
         currentContextService.getCurrentEnv(),
         currentContextService.getCurrentMarket(
@@ -74,7 +74,7 @@ public class FCMGameController {
   @RequestMapping(value = "/get-all", method = RequestMethod.GET)
   public ResponseEntity getAll() {
     return ResponseHelper.response(
-        fcmGameService.findAll()
+        fcmarsalanervice.findAll()
     );
   }
 

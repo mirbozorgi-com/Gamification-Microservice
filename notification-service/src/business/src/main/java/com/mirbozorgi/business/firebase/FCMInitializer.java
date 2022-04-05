@@ -15,13 +15,13 @@ import org.springframework.stereotype.Service;
 public class FCMInitializer {
 
   @Autowired
-  private FCMGameService fcmGameService;
+  private FCMGameService fcmarsalanervice;
 
 
   @PostConstruct
   public void initialize() {
 
-    for (FCMGame fcmGame : fcmGameService.findAll()) {
+    for (FCMGame fcmGame : fcmarsalanervice.findAll()) {
       String key = String.format("fcm_%s_%s_%s",
           fcmGame.getGamePackageName(),
           fcmGame.getEnv(),

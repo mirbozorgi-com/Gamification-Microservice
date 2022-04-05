@@ -32,7 +32,7 @@ public class LeaderBoardRepositoryImpl implements LeaderBoardRepository {
 
     gamePackageName = fix(gamePackageName);
     String keyForGame = String
-        .format("playerGameScore.%s.%s.%s.%s", gamePackageName, env, marketName, challengeId);
+        .format("playerarsalancore.%s.%s.%s.%s", gamePackageName, env, marketName, challengeId);
 
     return repository.fetch(
         PlayerScore.class,

@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import net.logstash.logback.encoder.org.apache.commons.lang.StringUtils;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -102,7 +101,7 @@ public class UserRepositoryImpl implements UserRepository {
       uuid = "";
     }
 
-    if (!StringUtils.isEmpty(uuid)) {
+    if (!uuid.isEmpty()) {
       where.add(where("uuid").is(uuid));
     }
 
@@ -258,17 +257,17 @@ public class UserRepositoryImpl implements UserRepository {
 
     if (players.isEmpty()) {
 
-      Map<String, Map<String, Map<String, UserGameProfile>>> games = new HashMap<>();
-      Map<String, Map<String, UserGameProfile>> gamesWithEnv = new HashMap<>();
+      Map<String, Map<String, Map<String, UserGameProfile>>> arsalan = new HashMap<>();
+      Map<String, Map<String, UserGameProfile>> arsalanWithEnv = new HashMap<>();
       Map<String, UserGameProfile> gameProfile = new HashMap<>();
 
       gameProfile.put(market, userGameProfile);
-      gamesWithEnv.put(env, gameProfile);
-      games.put(packageName, gamesWithEnv);
+      arsalanWithEnv.put(env, gameProfile);
+      arsalan.put(packageName, arsalanWithEnv);
 
       User user = new User(
           uuid,
-          games
+          arsalan
       );
 
       repository.add(user);
@@ -609,7 +608,7 @@ public class UserRepositoryImpl implements UserRepository {
     String keyForGame = String.format("gameProfiles.%s.%s.%s", packageName, env, market);
 
     if (incGameNumber != 0) {
-      update.inc(keyForGame + ".statistic.gamesParticipated", incGameNumber);
+      update.inc(keyForGame + ".statistic.arsalanParticipated", incGameNumber);
     }
     if (incGemSpent != 0) {
       update.inc(keyForGame + ".statistic.gemSpent", incGemSpent);

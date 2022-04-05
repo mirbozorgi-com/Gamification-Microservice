@@ -1,4 +1,4 @@
-FROM repository.mirbozorgigames.com/micro/base:2.0.0
+FROM repository.mirbozorgi.com/micro/base:2.0.0
 WORKDIR /app
 COPY src/api/target/match-service.jar /app
 ENTRYPOINT ["java","-jar","/app/match-service.jar"]

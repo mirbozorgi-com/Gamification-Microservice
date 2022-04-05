@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: api-getway
+  cloud:
+    config:
+      uri: http://${MICRO_CONFIG_URL:localhost}:${MICRO_CONFIG_PORT:8888}
+      label: master
+      profile: dev

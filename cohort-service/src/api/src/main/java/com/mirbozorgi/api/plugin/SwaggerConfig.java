@@ -47,7 +47,7 @@ public class SwaggerConfig {
             + "and your response is in \"data\" object",
 
         "0.2.0", "http://com.mirbozorgi.cohort-service",
-        new Contact("mirbozorgi", "http://www.mirbozorgigames.com", "info@medrckgames.com"),
+        new Contact("mirbozorgi", "http://www.mirbozorgi.com", "info@medrckarsalan.com"),
         "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0.html", new ArrayList<>());
     return apiInfo;
   }

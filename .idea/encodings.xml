@@ -6,7 +6,6 @@
     <file url="file://$PROJECT_DIR$/advertisement-service/src/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/advertisement-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/advertisement-service/src/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/api-gateway/base/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/asset-management-service/src/api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/asset-management-service/src/business/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/asset-management-service/src/core/src/main/java" charset="UTF-8" />
@@ -18,20 +17,27 @@
     <file url="file://$PROJECT_DIR$/challenge-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/challenge-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cohort-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cohort-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cohort-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cohort-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feigns-error/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feigns/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feigns/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/business/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/game-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/giftcode-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/giftcode-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/giftcode-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/giftcode-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/giftcode-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/giftcode-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/giftcode-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/giftcode-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hami-service/src/api/src/main/java" charset="UTF-8" />
@@ -45,13 +51,19 @@
     <file url="file://$PROJECT_DIR$/hokm-old-purchase-handler/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hokm-old-purchase-handler/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/item-shop-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-shop-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/item-shop-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-shop-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/item-shop-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-shop-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/item-shop-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/item-shop-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leaderboard-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leaderboard-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leaderboard-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leaderboard-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leaderboard-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leaderboard-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leaderboard-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leaderboard-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/marketVerif-service/src/api/src/main/java" charset="UTF-8" />
@@ -60,13 +72,19 @@
     <file url="file://$PROJECT_DIR$/marketVerif-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/marketVerif-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/match-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/match-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/match-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/match-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/match-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/match-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/notification-service/src/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/offlineChat-service/src/api/src/main/java" charset="UTF-8" />
@@ -79,23 +97,40 @@
     <file url="file://$PROJECT_DIR$/referral-service/src/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/referral-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/referral-service/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-reactive-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-reactive-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-service/target/generated-resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-stream-kafka-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-stream-kafka-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/admin-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/admin-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/config-service/base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/config-service/base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/eureka-second-service/base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/eureka-second-service/base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/eureka-service/base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/eureka-service/base/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/hystrix-dashboard/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/support/zipkin-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/support/zipkin-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/business/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-api-gateway/base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-api-gateway/base/src/main/resources" charset="UTF-8" />
   </component>
 </project>

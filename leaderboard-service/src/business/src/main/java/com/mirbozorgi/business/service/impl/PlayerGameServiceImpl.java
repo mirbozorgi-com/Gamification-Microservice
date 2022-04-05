@@ -87,7 +87,7 @@ public class PlayerGameServiceImpl implements PlayerGameScoreService {
         score,
         userUuId);
 
-    return playerGameScoreRepository.incGameScore(
+    return playerGameScoreRepository.incarsalancore(
         gamePackageName,
         marketName,
         env,

@@ -12,7 +12,7 @@ public class Statistic {
 
   private int invitations;
 
-  private int gamesParticipated;
+  private int arsalanParticipated;
 
   private int hamiCount;
 
@@ -32,7 +32,7 @@ public class Statistic {
       int win,
       int lose,
       int invitations,
-      int gamesParticipated,
+      int arsalanParticipated,
       int hamiCount,
       int gemSpent,
       int firstPlaceOfWeeklyXp,
@@ -41,7 +41,7 @@ public class Statistic {
     this.win = win;
     this.lose = lose;
     this.invitations = invitations;
-    this.gamesParticipated = gamesParticipated;
+    this.arsalanParticipated = arsalanParticipated;
     this.hamiCount = hamiCount;
     this.gemSpent = gemSpent;
     this.firstPlaceOfWeeklyXp = firstPlaceOfWeeklyXp;
@@ -73,8 +73,8 @@ public class Statistic {
     return invitations;
   }
 
-  public int getGamesParticipated() {
-    return gamesParticipated;
+  public int getarsalanParticipated() {
+    return arsalanParticipated;
   }
 
   public int getHamiCount() {

@@ -22,13 +22,13 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
   private FCMGameMessageRepository repository;
 
   @Autowired
-  private FCMGameService fcmGameService;
+  private FCMGameService fcmarsalanervice;
 
   @Override
   public FCMGameMessageInfo findBy(String gamePackageName,
       String env,
       String marketName, EnumKeyFCM enumKeyFCM) {
-    FCMGame fcmGame = fcmGameService.findBy(gamePackageName,
+    FCMGame fcmGame = fcmarsalanervice.findBy(gamePackageName,
         env,
         marketName);
     FCMGameMessage by = repository.findBy(fcmGame, enumKeyFCM);
@@ -49,7 +49,7 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
       String gamePackageName,
       String env,
       String marketName) {
-    FCMGame fcmGame = fcmGameService.findBy(gamePackageName,
+    FCMGame fcmGame = fcmarsalanervice.findBy(gamePackageName,
         env,
         marketName);
     FCMGameMessage fcmGameMessage = new FCMGameMessage(
@@ -73,7 +73,7 @@ public class FCMGameMessageServiceImpl implements FCMGameMessageService {
       String marketName) {
     List<FCMGameMessageInfo> fcmGameMessageInfos = new ArrayList<>();
 
-    FCMGame fcmGame = fcmGameService.findBy(gamePackageName,
+    FCMGame fcmGame = fcmarsalanervice.findBy(gamePackageName,
         env,
         marketName);
     List<FCMGameMessage> all = repository.findAll(fcmGame);

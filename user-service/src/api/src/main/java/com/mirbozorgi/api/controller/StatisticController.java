@@ -34,7 +34,7 @@ public class StatisticController {
         currentContextService.getCurrentEnv(),
         currentContextService.getCurrentMarket(),
         model.getIncHamiCount(),
-        model.getIncGamesParticipated(),
+        model.getIncarsalanParticipated(),
         model.getIncInvitations(),
         model.getIncGemSpent(),
         model.getIncWin(),

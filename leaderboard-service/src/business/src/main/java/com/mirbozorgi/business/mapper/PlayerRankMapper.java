@@ -30,7 +30,7 @@ public class PlayerRankMapper {
     gamePackageName = gamePackageName.replace(".", "_");
     int rank = 0;
     for (PlayerScore playerScore : playerScores) {
-      PlayerGameScore playerGameScore = playerScore.getPlayerGameScore().get(gamePackageName)
+      PlayerGameScore playerGameScore = playerScore.getPlayerarsalancore().get(gamePackageName)
           .get(env).get(marketName).get(challengeId);
 
       rank = rank + 1;
@@ -55,18 +55,18 @@ public class PlayerRankMapper {
     gamePackageName = gamePackageName.replace(".", "_");
     int rank = 0;
     for (PlayerXp playerScore : playerScores) {
-      PlayerXpData playerGameScore = playerScore.getPlayerXpDatas().get(gamePackageName)
+      PlayerXpData playerarsalancore = playerScore.getPlayerXpDatas().get(gamePackageName)
           .get(env).get(marketName);
 
       rank = rank + 1;
       playerRankScoreData.add(new PlayerXpRankData(
           playerScore.getUserUuId(),
-          playerGameScore.getUsername(),
+          playerarsalancore.getUsername(),
           rank,
-          playerGameScore.getXp(),
-          playerGameScore.getAvatarActiveIds(),
-          playerGameScore.getEndVipTime(),
-          playerGameScore.getLevel()
+          playerarsalancore.getXp(),
+          playerarsalancore.getAvatarActiveIds(),
+          playerarsalancore.getEndVipTime(),
+          playerarsalancore.getLevel()
       ));
 
     }
@@ -83,18 +83,18 @@ public class PlayerRankMapper {
     gamePackageName = gamePackageName.replace(".", "_");
     int rank = 0;
     for (PlayerXpWithTime playerScore : playerScores) {
-      PlayerXpData playerGameScore = playerScore.getPlayerXpDatas().get(gamePackageName)
+      PlayerXpData playerarsalancore = playerScore.getPlayerXpDatas().get(gamePackageName)
           .get(env).get(marketName);
 
       rank = rank + 1;
       playerRankScoreData.add(new PlayerXpRankData(
           playerScore.getUserUuId(),
-          playerGameScore.getUsername(),
+          playerarsalancore.getUsername(),
           rank,
-          playerGameScore.getXp(),
-          playerGameScore.getAvatarActiveIds(),
-          playerGameScore.getEndVipTime(),
-          playerGameScore.getLevel()
+          playerarsalancore.getXp(),
+          playerarsalancore.getAvatarActiveIds(),
+          playerarsalancore.getEndVipTime(),
+          playerarsalancore.getLevel()
       ));
 
     }
@@ -111,18 +111,18 @@ public class PlayerRankMapper {
     gamePackageName = gamePackageName.replace(".", "_");
     int rank = 0;
     for (PlayerGemBuy playerScore : playerScores) {
-      PlayerGemBuyData playerGameScore = playerScore.getPlayerGaemBuy().get(gamePackageName)
+      PlayerGemBuyData playerarsalancore = playerScore.getPlayerGaemBuy().get(gamePackageName)
           .get(env).get(marketName);
 
       rank = rank + 1;
       playerRankScoreData.add(new PlayerGemBuyRankData(
           playerScore.getUserUuId(),
-          playerGameScore.getUsername(),
+          playerarsalancore.getUsername(),
           rank,
-          playerGameScore.getLevel(),
-          playerGameScore.getGem(),
-          playerGameScore.getAvatarActiveIds(),
-          playerGameScore.getEndVipTime()
+          playerarsalancore.getLevel(),
+          playerarsalancore.getGem(),
+          playerarsalancore.getAvatarActiveIds(),
+          playerarsalancore.getEndVipTime()
       ));
 
     }
@@ -168,18 +168,18 @@ public class PlayerRankMapper {
     gamePackageName = gamePackageName.replace(".", "_");
     int rank = 0;
     for (PlayerRefral playerScore : playerScores) {
-      PlayerRefralData playerGameScore = playerScore.getPlayerRefrals().get(gamePackageName)
+      PlayerRefralData playerarsalancore = playerScore.getPlayerRefrals().get(gamePackageName)
           .get(env).get(marketName);
 
       rank = rank + 1;
       playerRankScoreData.add(new PlayerRefralRankData(
           playerScore.getUserUuId(),
-          playerGameScore.getUsername(),
+          playerarsalancore.getUsername(),
           rank,
-          playerGameScore.getQuantity(),
-          playerGameScore.getLevel(),
-          playerGameScore.getAvatarActiveIds(),
-          playerGameScore.getEndVipTime()
+          playerarsalancore.getQuantity(),
+          playerarsalancore.getLevel(),
+          playerarsalancore.getAvatarActiveIds(),
+          playerarsalancore.getEndVipTime()
       ));
 
     }

@@ -12,7 +12,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.9.RELEASE</version>
+    <version>2.1.2.RELEASE</version>
   </parent>
 
 
@@ -20,7 +20,7 @@
   <artifactId>mirbozorgi-item-shop-service</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>mirbozorgi-item-shop-service</name>
-  <description>Demo project for Spring Boot</description>
+  <description>Mirbozorgi Project For Microservice</description>
 
   <properties>
     <java.version>1.8</java.version>
@@ -28,7 +28,7 @@
     <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -155,11 +155,6 @@
       <version>${jedis.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>net.logstash.logback</groupId>
-      <artifactId>logstash-logback-encoder</artifactId>
-      <version>4.9</version>
-    </dependency>
 
     <dependency>
       <groupId>io.springfox</groupId>
@@ -185,11 +180,6 @@
       <version>1.9</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.hashids</groupId>
-      <artifactId>hashids</artifactId>
-      <version>1.0.1</version>
-    </dependency>
 
     <dependency>
       <groupId>joda-time</groupId>
@@ -203,10 +193,7 @@
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-sleuth</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-log4j2</artifactId>
-    </dependency>
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-zipkin</artifactId>

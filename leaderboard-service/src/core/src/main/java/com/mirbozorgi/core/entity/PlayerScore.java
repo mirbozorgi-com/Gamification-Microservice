@@ -17,20 +17,20 @@ public class PlayerScore {
   private String userUuId;
 
   //key : packageName.env.marketName.challengeId
-  private Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerGameScore;
+  private Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerarsalancore;
 
   public PlayerScore(String userUuId,
-      Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerGameScore) {
+      Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> playerarsalancore) {
     this.userUuId = userUuId;
-    this.playerGameScore = playerGameScore;
+    this.playerarsalancore = playerarsalancore;
   }
 
   public PlayerScore() {
-    playerGameScore = new HashMap<>();
+    playerarsalancore = new HashMap<>();
   }
 
-  public Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> getPlayerGameScore() {
-    return playerGameScore;
+  public Map<String, Map<String, Map<String, Map<String, PlayerGameScore>>>> getPlayerarsalancore() {
+    return playerarsalancore;
   }
 
   public ObjectId getId() {

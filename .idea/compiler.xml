@@ -2,55 +2,54 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-api-gateway" />
-        <module name="eureka-service" />
-        <module name="eureka-second-service" />
-        <module name="security-reactive-service" />
-        <module name="hystrix-dashboard" />
-        <module name="config-service" />
-        <module name="zipkin-service" />
-        <module name="feigns" />
-        <module name="security-service" />
-        <module name="api-gateway" />
-        <module name="feigns-error" />
-        <module name="spring-cloud-stream-kafka-example" />
-        <module name="admin-service" />
-      </profile>
-      <profile name="Annotation profile for mirbozorgi-micro-service" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="medrick-item-shop-service-business" />
-        <module name="medrick-notification-service-core" />
-        <module name="mirbozorgi-cohort-service-api" />
         <module name="mirbozorgi-game-service-business" />
+        <module name="zuul-api-gateway" />
         <module name="mirbozorgi-challenge-service-business" />
+        <module name="mirbozorgi-match-service-business" />
+        <module name="mirbozorgi-leaderboard-service-core" />
         <module name="mirbozorgi-cohort-service-core" />
-        <module name="medrick-item-shop-service-core" />
-        <module name="medrick-leaderboard-service-core" />
-        <module name="medrick-leaderboard-service-business" />
-        <module name="mirbozorgi-user-service-core" />
+        <module name="mirbozorgi-giftcode-service-api" />
+        <module name="mirbozorgi-item-shop-service-api" />
+        <module name="mirbozorgi-leaderboard-service-api" />
         <module name="mirbozorgi-cohort-service-business" />
-        <module name="medrick-match-service-business" />
-        <module name="mirbozorgi-game-service-core" />
+        <module name="mirbozorgi-item-shop-service-business" />
+        <module name="eureka-service" />
+        <module name="mirbozorgi-notification-service-core" />
         <module name="mirbozorgi-game-service-api" />
-        <module name="medrick-item-shop-service-api" />
-        <module name="medrick-leaderboard-service-api" />
-        <module name="mirbozorgi-challenge-service-core" />
+        <module name="mirbozorgi-match-service-core" />
+        <module name="mirbozorgi-giftcode-service-core" />
+        <module name="hystrix-dashboard" />
         <module name="mirbozorgi-challenge-service-api" />
-        <module name="medrick-notification-service-business" />
         <module name="mirbozorgi-user-service-business" />
         <module name="mirbozorgi-user-service-api" />
-        <module name="medrick-notification-service-api" />
-        <module name="medrick-match-service-api" />
-        <module name="medrick-match-service-core" />
+        <module name="mirbozorgi-cohort-service-api" />
+        <module name="mirbozorgi-giftcode-service-business" />
+        <module name="config-service" />
+        <module name="mirbozorgi-item-shop-service-core" />
+        <module name="mirbozorgi-match-service-api" />
+        <module name="mirbozorgi-leaderboard-service-business" />
+        <module name="zipkin-service" />
+        <module name="mirbozorgi-notification-service-api" />
+        <module name="feigns" />
+        <module name="mirbozorgi-user-service-core" />
+        <module name="mirbozorgi-notification-service-business" />
+        <module name="mirbozorgi-game-service-core" />
+        <module name="security-service" />
+        <module name="mirbozorgi-challenge-service-core" />
+        <module name="feigns-error" />
+        <module name="admin-service" />
+        <module name="spring-cloud-stream-kafka-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="eureka-second-service" target="1.8" />
       <module name="medrick-advertisement-service" target="1.8" />
       <module name="medrick-advertisement-service-api" target="1.8" />
       <module name="medrick-advertisement-service-business" target="1.8" />
@@ -63,10 +62,26 @@
       <module name="medrick-hom-old-purchase-handler-api" target="1.8" />
       <module name="medrick-hom-old-purchase-handler-business" target="1.8" />
       <module name="medrick-hom-old-purchase-handler-core" target="1.8" />
+      <module name="medrick-item-shop-service" target="17" />
+      <module name="medrick-item-shop-service-api" target="17" />
+      <module name="medrick-item-shop-service-business" target="17" />
+      <module name="medrick-item-shop-service-core" target="17" />
+      <module name="medrick-leaderboard-service" target="17" />
+      <module name="medrick-leaderboard-service-api" target="17" />
+      <module name="medrick-leaderboard-service-business" target="17" />
+      <module name="medrick-leaderboard-service-core" target="17" />
       <module name="medrick-market-verification" target="1.8" />
       <module name="medrick-market-verification-api" target="1.8" />
       <module name="medrick-market-verification-business" target="1.8" />
       <module name="medrick-market-verification-core" target="1.8" />
+      <module name="medrick-match-service" target="17" />
+      <module name="medrick-match-service-api" target="17" />
+      <module name="medrick-match-service-business" target="17" />
+      <module name="medrick-match-service-core" target="17" />
+      <module name="medrick-notification-service" target="17" />
+      <module name="medrick-notification-service-api" target="17" />
+      <module name="medrick-notification-service-business" target="17" />
+      <module name="medrick-notification-service-core" target="17" />
       <module name="medrick-OfflineChat-service" target="1.8" />
       <module name="medrick-OfflineChat-service-api" target="1.8" />
       <module name="medrick-OfflineChat-service-business" target="1.8" />
@@ -79,14 +94,12 @@
       <module name="medrick-userHami-service-api" target="1.8" />
       <module name="medrick-userHami-service-business" target="1.8" />
       <module name="medrick-userHami-service-core" target="1.8" />
-      <module name="mirbozorgi-giftcode-service" target="1.8" />
-      <module name="mirbozorgi-giftcode-service-api" target="1.8" />
-      <module name="mirbozorgi-giftcode-service-business" target="1.8" />
-      <module name="mirbozorgi-giftcode-service-core" target="1.8" />
+      <module name="security-reactive-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Gamification-Microservice" options="" />
       <module name="admin-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="config-service" options="-parameters" />
@@ -140,13 +153,28 @@
       <module name="mirbozorgi-giftcode-service-api" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-business" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-core" options="-parameters" />
+      <module name="mirbozorgi-item-shop-service-api" options="-parameters" />
+      <module name="mirbozorgi-item-shop-service-business" options="-parameters" />
+      <module name="mirbozorgi-item-shop-service-core" options="-parameters" />
+      <module name="mirbozorgi-leaderboard-service-api" options="-parameters" />
+      <module name="mirbozorgi-leaderboard-service-business" options="-parameters" />
+      <module name="mirbozorgi-leaderboard-service-core" options="-parameters" />
+      <module name="mirbozorgi-match-service-api" options="-parameters" />
+      <module name="mirbozorgi-match-service-business" options="-parameters" />
+      <module name="mirbozorgi-match-service-core" options="-parameters" />
+      <module name="mirbozorgi-notification-service-api" options="-parameters" />
+      <module name="mirbozorgi-notification-service-business" options="-parameters" />
+      <module name="mirbozorgi-notification-service-core" options="-parameters" />
       <module name="mirbozorgi-user-service-api" options="-parameters" />
       <module name="mirbozorgi-user-service-business" options="-parameters" />
       <module name="mirbozorgi-user-service-core" options="-parameters" />
+      <module name="security-reactive-service" options="-parameters" />
       <module name="security-service" options="-parameters" />
       <module name="spring-cloud-api-gateway" options="-parameters" />
       <module name="spring-cloud-stream-kafka-example" options="-parameters" />
+      <module name="support" options="" />
       <module name="zipkin-service" options="-parameters" />
+      <module name="zuul-api-gateway" options="-parameters" />
     </option>
   </component>
 </project>
