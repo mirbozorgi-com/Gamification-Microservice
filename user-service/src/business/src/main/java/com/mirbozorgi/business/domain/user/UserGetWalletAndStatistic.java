@@ -22,7 +22,7 @@ public class UserGetWalletAndStatistic {
 
   private int invitations;
 
-  private int gamesParticipated;
+  private int arsalanParticipated;
 
   private int hamiCount;
 
@@ -42,7 +42,7 @@ public class UserGetWalletAndStatistic {
       int win,
       int lose,
       int invitations,
-      int gamesParticipated,
+      int arsalanParticipated,
       int hamiCount,
       int gemSpent) {
     this.gem = gem;
@@ -54,7 +54,7 @@ public class UserGetWalletAndStatistic {
     this.win = win;
     this.lose = lose;
     this.invitations = invitations;
-    this.gamesParticipated = gamesParticipated;
+    this.arsalanParticipated = arsalanParticipated;
     this.hamiCount = hamiCount;
     this.gemSpent = gemSpent;
   }
@@ -95,8 +95,8 @@ public class UserGetWalletAndStatistic {
     return invitations;
   }
 
-  public int getGamesParticipated() {
-    return gamesParticipated;
+  public int getarsalanParticipated() {
+    return arsalanParticipated;
   }
 
   public int getHamiCount() {

@@ -1,7 +1,7 @@
 package com.mirbozorgi.api.model;
 
-import com.sun.istack.NotNull;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 public class OfflineUpdateModel {
 

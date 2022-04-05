@@ -1,15 +1,15 @@
 package com.mirbozorgi.business.service.impl;
 
+import com.mirbozorgi.business.domain.ItemShopData;
+import com.mirbozorgi.business.domain.ItemShopFindAll;
+import com.mirbozorgi.business.exception.ConsumptionBeforeException;
+import com.mirbozorgi.business.exception.ConsumptionClientException;
 import com.mirbozorgi.business.exception.ConsumptionException;
 import com.mirbozorgi.business.exception.NotFoundException;
 import com.mirbozorgi.business.exception.PurchaseCredentialException;
 import com.mirbozorgi.business.mapper.ItemShopMapper;
 import com.mirbozorgi.business.service.ItemShopService;
 import com.mirbozorgi.business.service.TimeService;
-import com.mirbozorgi.business.domain.ItemShopData;
-import com.mirbozorgi.business.domain.ItemShopFindAll;
-import com.mirbozorgi.business.exception.ConsumptionBeforeException;
-import com.mirbozorgi.business.exception.ConsumptionClientException;
 import com.mirbozorgi.core.constant.ItemType;
 import com.mirbozorgi.core.docuemnt.ItemShop;
 import com.mirbozorgi.core.domain.ItemData;
@@ -38,6 +38,9 @@ public class ItemShopServiceImpl implements ItemShopService {
 
 
   @Autowired
+  private UserHamiFeginService userHamiFeginService;
+
+  @Autowired
   private ItemShopRepository itemShopRepository;
 
   @Autowired
@@ -45,9 +48,6 @@ public class ItemShopServiceImpl implements ItemShopService {
 
   @Autowired
   private UserFeignService userFeignService;
-
-  @Autowired
-  private UserHamiFeginService userHamiFeginService;
 
   @Value("${api.key.walletchange}")
   String apiKeyWalletChange;

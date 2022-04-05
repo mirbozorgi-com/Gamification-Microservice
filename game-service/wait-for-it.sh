@@ -1,8 +1,8 @@
 #!/bin/bash
 set -eux
 
-declare -r CONFIG="lucifer.mirbozorgigames.com:8888/game-service/prod/master"
-declare -r EUREKA="lucifer.mirbozorgigames.com:8761"
+declare -r CONFIG="mirbozorgi.com:8888/game-service/prod/master"
+declare -r EUREKA="mirbozorgi.com:8761"
 
 wait-for-url() {
     echo "Testing $1"

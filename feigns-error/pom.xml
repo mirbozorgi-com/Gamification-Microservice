@@ -19,7 +19,7 @@
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+
   </properties>
 
   <dependencies>
@@ -50,11 +50,6 @@
       <artifactId>spring-boot-starter</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>net.logstash.logback</groupId>
-      <artifactId>logstash-logback-encoder</artifactId>
-      <version>4.9</version>
-    </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -117,15 +112,11 @@
       <artifactId>spring-cloud-starter-eureka</artifactId>
       <version>1.2.0.RELEASE</version>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-      <version>1.0.9.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
-      <version>1.0.9.RELEASE</version>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
 
 
@@ -141,18 +132,12 @@
       </exclusions>
     </dependency>
 
-    <!--*** zipkin and sleuth ***-->
+
+
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-sleuth</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-log4j2</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-zipkin</artifactId>
+      <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+      <version>3.1.1</version>
     </dependency>
 
   </dependencies>

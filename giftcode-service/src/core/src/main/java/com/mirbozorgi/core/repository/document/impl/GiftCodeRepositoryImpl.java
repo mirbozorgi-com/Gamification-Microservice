@@ -1,12 +1,11 @@
 package com.mirbozorgi.core.repository.document.impl;
 
+import com.mirbozorgi.core.docuemnt.GiftCode;
 import com.mirbozorgi.core.repository.document.CustomMongoRepository;
 import com.mirbozorgi.core.repository.document.GiftCodeRepository;
-import com.mirbozorgi.core.docuemnt.GiftCode;
 import java.util.ArrayList;
 import java.util.List;
 import mirbozorgi.base.domain.user.WalletChange;
-import net.logstash.logback.encoder.org.apache.commons.lang.StringUtils;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -66,23 +65,23 @@ public class GiftCodeRepositoryImpl implements GiftCodeRepository {
       marketName = "";
     }
 
-    if (!StringUtils.isEmpty(name)) {
+    if (!name.isEmpty()) {
       where.add(Criteria.where("name").is(name));
     }
 
-    if (!StringUtils.isEmpty(code)) {
+    if (!code.isEmpty()) {
       where.add(Criteria.where("code").is(code));
     }
 
-    if (!StringUtils.isEmpty(gamePackageName)) {
+    if (!gamePackageName.isEmpty()) {
       where.add(Criteria.where("gamePackageName").is(gamePackageName));
     }
 
-    if (!StringUtils.isEmpty(env)) {
+    if (!env.isEmpty()) {
       where.add(Criteria.where("env").is(env));
     }
 
-    if (!StringUtils.isEmpty(marketName)) {
+    if (!marketName.isEmpty()) {
       where.add(Criteria.where("marketName").is(marketName));
     }
 

@@ -4,7 +4,7 @@ public class UpdateUserStatisticModel {
 
   private int incInvitations;
 
-  private int incGamesParticipated;
+  private int incarsalanParticipated;
 
   private int incHamiCount;
 
@@ -19,13 +19,13 @@ public class UpdateUserStatisticModel {
 
   public UpdateUserStatisticModel(
       int incInvitations,
-      int incGamesParticipated,
+      int incarsalanParticipated,
       int incHamiCount,
       int incGemSpent,
       int incWin,
       int incLose) {
     this.incInvitations = incInvitations;
-    this.incGamesParticipated = incGamesParticipated;
+    this.incarsalanParticipated = incarsalanParticipated;
     this.incHamiCount = incHamiCount;
     this.incGemSpent = incGemSpent;
     this.incWin = incWin;
@@ -36,8 +36,8 @@ public class UpdateUserStatisticModel {
     return incInvitations;
   }
 
-  public int getIncGamesParticipated() {
-    return incGamesParticipated;
+  public int getIncarsalanParticipated() {
+    return incarsalanParticipated;
   }
 
   public int getIncHamiCount() {

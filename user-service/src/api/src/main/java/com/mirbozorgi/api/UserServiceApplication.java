@@ -1,6 +1,5 @@
 package com.mirbozorgi.api;
 
-import brave.sampler.Sampler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -28,10 +27,10 @@ public class UserServiceApplication {
   }
 
 
-  @Bean
-  public Sampler defaultSampler() {
-    return Sampler.ALWAYS_SAMPLE;
-  }
+//  @Bean
+//  public Sampler defaultSampler() {
+//    return Sampler.ALWAYS_SAMPLE;
+//  }
 
 
 }

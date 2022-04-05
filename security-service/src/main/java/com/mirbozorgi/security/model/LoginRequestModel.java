@@ -1,7 +1,7 @@
 package com.mirbozorgi.security.model;
 
-import com.sun.istack.NotNull;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 public class LoginRequestModel {
 

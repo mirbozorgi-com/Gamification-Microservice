@@ -26,7 +26,6 @@ import mirbozorgi.base.domain.user.Wallet;
 import mirbozorgi.base.domain.user.WalletChange;
 import mirbozorgi.base.domain.user.WalletWithVipTime;
 import mirbozorgi.base.feignService.UserFeignService;
-import mirbozorgi.base.feignService.UserHamiFeginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,8 @@
 # Start with a base image containing Java runtime
-FROM repository.mirbozorgigames.com/micro/base:2.0.0
+FROM repository.mirbozorgi.com/micro/base:2.0.0
 
 # Add Maintainer Info
-LABEL maintainer="http://www.mirbozorgigames.com"
+LABEL maintainer="http://www.mirbozorgi.com"
 
 # Add a volume pointing to /tmp
 VOLUME /tmp

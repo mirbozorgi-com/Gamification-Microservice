@@ -53,7 +53,7 @@ public class PlayerGemBuyHistoryTimeRepositoryImpl implements PlayerGemBuyHistor
       String marketName) {
     gamePackageName = fix(gamePackageName);
     String keyForGame = String
-        .format("playerGameScore.%s.%s.%s", gamePackageName, env, marketName);
+        .format("playerarsalancore.%s.%s.%s", gamePackageName, env, marketName);
 
     return repository.fetchFirst(
         PlayerGemBuyHistoryTime.class,

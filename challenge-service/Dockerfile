@@ -3,7 +3,7 @@ COPY  src /app/src
 WORKDIR /app/src
 RUN mvn clean package
 
-FROM repository.mirbozorgigames.com/micro/base:2.0.0
+FROM repository.mirbozorgi.com/micro/base:2.0.0
 WORKDIR /app
 COPY --from=build /app/src/api/target/challenge-service.jar /app
 

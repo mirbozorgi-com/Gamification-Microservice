@@ -21,7 +21,6 @@
   <modules>
     <module>config-service/base</module>
     <module>eureka-service/base</module>
-    <module>eureka-second-service/base</module>
     <module>hystrix-dashboard</module>
     <module>zipkin-service</module>
     <module>admin-service</module>
