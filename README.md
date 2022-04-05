@@ -10,6 +10,15 @@
 <p align="center">
   <!-- version -->
 
+## How does it work?
+
+- First install MongoDB, PostgresSQL and Redis on your OS
+- Create Databases needed in the
+  config ([GitHub]( https://github.com/mirbozorgi-com/Gamification-Microservice-Config-Repo))
+- Start Config Service
+- Start Eureka Service as register service
+- Start whatever service you want based of your preferences
+
 ## Features and Stacks V 1.0.0
 
 ⚡ Spring Cloud `Greenwich.RELEASE version `
@@ -28,6 +37,8 @@
 with [GitHub]( https://github.com/mirbozorgi-com/Gamification-Microservice-Config-Repo)
 
 ⚡ Eureka as `Registery Service `
+
+⚡ All Services has their databases, and they are independent of other database's schema
 
 
 <hr style="border:2px solid gray"> </hr>

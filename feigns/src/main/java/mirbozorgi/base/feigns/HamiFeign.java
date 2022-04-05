@@ -1,5 +1,6 @@
 package mirbozorgi.base.feigns;
 
+
 import mirbozorgi.base.domain.hami.AddModel;
 import mirbozorgi.base.domain.hami.UserVipAddModel;
 import org.springframework.cloud.openfeign.FeignClient;

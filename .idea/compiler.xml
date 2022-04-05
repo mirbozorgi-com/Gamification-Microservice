@@ -11,16 +11,16 @@
         <module name="mirbozorgi-game-service-business" />
         <module name="zuul-api-gateway" />
         <module name="mirbozorgi-challenge-service-business" />
-        <module name="mirbozorgi-match-service-business" />
         <module name="mirbozorgi-leaderboard-service-core" />
+        <module name="mirbozorgi-match-service-business" />
         <module name="mirbozorgi-cohort-service-core" />
         <module name="mirbozorgi-giftcode-service-api" />
         <module name="mirbozorgi-item-shop-service-api" />
         <module name="mirbozorgi-leaderboard-service-api" />
         <module name="mirbozorgi-cohort-service-business" />
         <module name="mirbozorgi-item-shop-service-business" />
-        <module name="eureka-service" />
         <module name="mirbozorgi-notification-service-core" />
+        <module name="eureka-service" />
         <module name="mirbozorgi-game-service-api" />
         <module name="mirbozorgi-match-service-core" />
         <module name="mirbozorgi-giftcode-service-core" />
@@ -28,28 +28,32 @@
         <module name="mirbozorgi-challenge-service-api" />
         <module name="mirbozorgi-user-service-business" />
         <module name="mirbozorgi-user-service-api" />
-        <module name="mirbozorgi-cohort-service-api" />
+        <module name="mirbozorgi-giftCode-service-business" />
         <module name="mirbozorgi-giftcode-service-business" />
-        <module name="config-service" />
+        <module name="mirbozorgi-cohort-service-api" />
         <module name="mirbozorgi-item-shop-service-core" />
+        <module name="config-service" />
         <module name="mirbozorgi-match-service-api" />
         <module name="mirbozorgi-leaderboard-service-business" />
-        <module name="zipkin-service" />
         <module name="mirbozorgi-notification-service-api" />
+        <module name="zipkin-service" />
+        <module name="mirbozorgi-giftCode-service-api" />
         <module name="feigns" />
         <module name="mirbozorgi-user-service-core" />
         <module name="mirbozorgi-notification-service-business" />
+        <module name="mirbozorgi-giftCode-service-core" />
         <module name="mirbozorgi-game-service-core" />
         <module name="security-service" />
         <module name="mirbozorgi-challenge-service-core" />
         <module name="feigns-error" />
-        <module name="admin-service" />
         <module name="spring-cloud-stream-kafka-example" />
+        <module name="admin-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="eureka-second-service" target="1.8" />
+      <module name="Gamification-Microservice" target="1.8" />
       <module name="medrick-advertisement-service" target="1.8" />
       <module name="medrick-advertisement-service-api" target="1.8" />
       <module name="medrick-advertisement-service-business" target="1.8" />
@@ -150,6 +154,9 @@
       <module name="mirbozorgi-game-service-api" options="-parameters" />
       <module name="mirbozorgi-game-service-business" options="-parameters" />
       <module name="mirbozorgi-game-service-core" options="-parameters" />
+      <module name="mirbozorgi-giftCode-service-api" options="-parameters" />
+      <module name="mirbozorgi-giftCode-service-business" options="-parameters" />
+      <module name="mirbozorgi-giftCode-service-core" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-api" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-business" options="-parameters" />
       <module name="mirbozorgi-giftcode-service-core" options="-parameters" />
