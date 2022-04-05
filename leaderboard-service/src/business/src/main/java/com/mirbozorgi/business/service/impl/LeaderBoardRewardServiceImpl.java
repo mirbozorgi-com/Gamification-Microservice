@@ -1,10 +1,10 @@
 package com.mirbozorgi.business.service.impl;
 
-import com.mirbozorgi.business.service.TimeService;
 import com.mirbozorgi.business.domain.LeaderBoardRewardInfo;
 import com.mirbozorgi.business.exception.NotFoundException;
 import com.mirbozorgi.business.mapper.LeaderBoardRewardMapper;
 import com.mirbozorgi.business.service.LeaderBoardRewardService;
+import com.mirbozorgi.business.service.TimeService;
 import com.mirbozorgi.core.domain.LeaderBoardType;
 import com.mirbozorgi.core.entity.LeaderBoardReward;
 import com.mirbozorgi.core.entity.PlayerGemBuy;
@@ -19,6 +19,7 @@ import mirbozorgi.base.domain.game.WalletChangeModel;
 import mirbozorgi.base.domain.hami.HamiAndNotificationType;
 import mirbozorgi.base.domain.user.WalletChange;
 import mirbozorgi.base.feignService.UserFeignService;
+import mirbozorgi.base.feignService.UserHamiFeginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
@@ -117,10 +118,10 @@ public class LeaderBoardRewardServiceImpl implements LeaderBoardRewardService {
       String marketName) {
 
     List<WalletChange> walletChanges = leaderBoardRewardRepository.findBy(
-        gamePackageName,
-        env,
-        marketName
-    ).getRewards()
+            gamePackageName,
+            env,
+            marketName
+        ).getRewards()
         .get(type);
 
     if (walletChanges == null) {

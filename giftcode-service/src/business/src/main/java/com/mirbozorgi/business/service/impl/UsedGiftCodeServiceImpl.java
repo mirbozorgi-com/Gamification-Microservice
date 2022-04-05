@@ -1,12 +1,12 @@
 package com.mirbozorgi.business.service.impl;
 
+import com.mirbozorgi.business.domain.GiftCodeInfo;
+import com.mirbozorgi.business.domain.GiftCodeUseData;
 import com.mirbozorgi.business.exception.GiftCodeUsedException;
+import com.mirbozorgi.business.mapper.GiftCodeUsedMapper;
 import com.mirbozorgi.business.service.GiftCodeService;
 import com.mirbozorgi.business.service.TimeService;
 import com.mirbozorgi.business.service.UsedGiftCodeService;
-import com.mirbozorgi.business.domain.GiftCodeInfo;
-import com.mirbozorgi.business.domain.GiftCodeUseData;
-import com.mirbozorgi.business.mapper.GiftCodeUsedMapper;
 import com.mirbozorgi.core.docuemnt.UsedGiftCode;
 import com.mirbozorgi.core.repository.document.UsedGiftCodeRepository;
 import java.util.ArrayList;
@@ -16,6 +16,7 @@ import mirbozorgi.base.domain.hami.HamiAndNotificationType;
 import mirbozorgi.base.domain.user.UserGetGlobalResponse;
 import mirbozorgi.base.domain.user.WalletChange;
 import mirbozorgi.base.feignService.UserFeignService;
+import mirbozorgi.base.feignService.UserHamiFeginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
