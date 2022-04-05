@@ -12,9 +12,9 @@
 
 ## Features and Stacks V 1.0.0
 
-⚡ Spring Cloud `2021.0.1 version `
+⚡ Spring Cloud `Greenwich.RELEASE version `
 
-⚡ Spring `Greenwich.RELEASE version `
+⚡ Spring `2.1.2.RELEASE version `
 
 ⚡ Java `1.8`
 
