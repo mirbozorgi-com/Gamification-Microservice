@@ -54,6 +54,9 @@ with [GitHub]( https://github.com/mirbozorgi-com/Gamification-Microservice-Confi
 
 - Adding Lombok and usage of Lambda
 - Usage of multiple design pattern to enhance the code quality
+- Update Spring Cloud to `2021.0.1`
+- Update Java to `17`
+- Update Spring Boot to `2.6.6`
 
 ## ☕ V 1.8.0 Future Features:
 

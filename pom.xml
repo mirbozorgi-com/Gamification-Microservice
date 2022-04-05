@@ -38,8 +38,8 @@
     <module>leaderboard-service/src</module>
     <module>notification-service/src</module>
     <module>item-shop-service/src</module>
-    <!--    <module>feigns</module>-->
-<!--    <module>feigns-error</module>-->
+    <module>feigns</module>
+    <module>feigns-error</module>
     <module>support</module>
     <module>spring-cloud-stream-kafka-example</module>
   </modules>
