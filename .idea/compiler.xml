@@ -9,10 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-cloud-api-gateway" />
         <module name="mirbozorgi-game-service-business" />
+        <module name="zuul-api-gateway" />
+        <module name="mirbozorgi-leaderboard-service-core" />
         <module name="mirbozorgi-challenge-service-business" />
         <module name="mirbozorgi-match-service-business" />
-        <module name="mirbozorgi-leaderboard-service-core" />
-        <module name="zuul-api-gateway" />
         <module name="mirbozorgi-cohort-service-core" />
         <module name="mirbozorgi-giftcode-service-api" />
         <module name="mirbozorgi-item-shop-service-api" />
@@ -99,7 +99,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Gamification-Microservice" options="-parameters" />
+      <module name="Gamification-Microservice" options="" />
       <module name="admin-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="config-service" options="-parameters" />
