@@ -69,6 +69,7 @@ terminated.)
 
 - Adding Lombok and usage of Lambda
 - Usage of multiple design pattern to enhance the code quality
+- Add MapStruct for all Mappers
 - Update Spring Cloud to `2021.0.1`
 - Update Java to `17`
 - Update Spring Boot to `2.6.6`
